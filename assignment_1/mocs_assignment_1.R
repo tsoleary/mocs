@@ -4,8 +4,15 @@
 # M Clark & TS O'Leary
 # ------------------------------------------------------------------------------
 
+################################################################################
+# Question 3: Create an implementation of Euler's Method and Huen's Method in R
+################################################################################
+# Each function should have a tunable parameter h which represents the step size
+# What is the relationship between Euler’s method and a discrete time model? 
 
-# Question 3: Create 
+# Need to figure out how to make the eulers method generalizable beyond sis model
+
+# Create Euler's method function ----
 
 # ------------------------------------------------------------------------------
 # Function: euler_method
@@ -38,8 +45,42 @@ euler_method <- function(funct, h, n_steps, state, params) {
 } 
 # End function -----------------------------------------------------------------
 
+# Create Heun's method function ----
+
 # ------------------------------------------------------------------------------
-# Function: s_dot
+# Function: heun_method
+# Description: description
+# Inputs: input_description
+# Outputs: output_description
+
+heun_method <- function() {
+  # function body
+
+} 
+# End function -----------------------------------------------------------------
+
+
+
+################################################################################
+# Question 4: Implement Euler and Huen's Method on SIS model -------------------
+################################################################################
+
+# Test with the following parameters -----
+# N = 100, γ = 0.25, and each β ∈ {0.03, 0.06, 0.1}
+# Using step sizes h ∈ {0.01, 0.5, 2.0}
+# Run the model for 50 steps each time
+# Use initial values of (S, I) = (90, 10)
+
+# Create the following plot
+# Create 9 different plots showing time series from both your 
+# Euler’s and Heun’s method with each of these parameter combinations
+
+# Is there a noticeable difference between the two methods? What might be going on?
+
+# Create SIS model function -----
+
+# ------------------------------------------------------------------------------
+# Function: sis_model
 # Description: description
 # Inputs: input_description
 # Outputs: output_description
@@ -58,6 +99,10 @@ sis_model <- function(t, state, params) {
 } 
 # End function -----------------------------------------------------------------
 
+
+
+
+
 # Inital state of the system
 state <- c(S = 90, I = 10)
 
@@ -69,10 +114,22 @@ out <- euler_method(sis_model, h = 0.1, n_steps = 50, params = params, state = s
 
 require(tidyverse)
 
+
 out <- out %>%
   pivot_longer(S:I, names_to = "Box", values_to = "Number")
 
+
+# Plotting ----
 ggplot(data = out) +
   geom_line(aes(x = Time, y = Number, color = Box)) +
   ylim(c(0, 100)) +
   theme_classic()
+
+
+
+
+
+
+
+
+# 
