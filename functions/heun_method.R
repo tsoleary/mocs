@@ -34,8 +34,8 @@ heun_method <- function(funct, h, n_steps, init_conds, params, t_0 = 0) {
   
   # Iterate through the function for n_steps
   for (n in 2:(n_steps + 1)) {
-    state_euler <- state + h * funct(t[n], state, params)
-    state <- state + h * ((funct(t[n], state, params) + 
+    state_euler <- state + h * funct(t[n - 1], state, params)
+    state <- state + h * ((funct(t[n - 1], state, params) + 
                              funct(t[n], state_euler, params))/2)
     t <- mat[n - 1, 1] + h
     mat[n, ] <- c(t, state)
@@ -46,5 +46,5 @@ heun_method <- function(funct, h, n_steps, init_conds, params, t_0 = 0) {
   colnames(df) <- c("t", names(init_conds))
   return(df)
   
-} 
+}
 # End function -----------------------------------------------------------------
