@@ -7,7 +7,7 @@
 # Example call:
 # state <- c(S = 90, I = 10)
 # params <- c(beta = 0.03, gamma = 0.25)
-# sis_model(t = 0, state, params)
+# slope <- sis_model(t = 0, state, params)
 
 sis_model <- function(t, state, params) {
   # Define the variables in the state and parameters
