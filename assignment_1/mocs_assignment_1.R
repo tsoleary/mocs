@@ -41,16 +41,11 @@ initial_state <- c(S = 90, I = 10)
 
 # Define the set of numbers to test for beta and h
 betas <- c(0.03, 0.06, 0.1)
-# Some thing is going on when h is high -- not sure if there is something wrong
-# Also it seems like a am getting similar solutions to Euler and Huens
 hs <- c(0.01, 0.5, 2.0)
-#hs <- c(0.01, 0.1, .2)
 
 # Initialize an empty data.frame to store the outputs and information
-df <- tibble(beta = vector(mode = "numeric", length = length(betas)*length(hs)),
-             h = vector(mode = "numeric", length = length(betas)*length(hs)), 
-             euler = vector(mode = "list", length = length(betas)*length(hs)),
-             heun = vector(mode = "list", length = length(betas)*length(hs)))
+df <- tibble()
+
 # Initialize a counter to help with indexing the df
 loops <- 0
 
@@ -79,34 +74,39 @@ for (j in 1:length(betas)){
     loops <- loops + 1 
     
     # Save results as a nested data.frame with beta and h value in their row
-    df$beta[loops] <- betas[j]
-    df$h[loops] <- hs[i] 
-    df$euler[loops] <- nest(out_e, data = everything())
-    df$heun[loops] <- nest(out_h, data = everything())
+    # df$beta[loops] <- betas[j]
+    # df$h[loops] <- hs[i] 
+    # df$euler[loops] <- nest(out_e, data = everything())
+    # df$heun[loops] <- nest(out_h, data = everything())
+    
+    out_e$method <- "euler"
+    out_h$method <- "heun"
+    comb <- bind_rows(out_e, out_h) %>%
+      pivot_longer(S:I, 
+                   names_to = "Box", 
+                   values_to = "Number")
+    comb$beta <- betas[j]
+    comb$h <- hs[i]
+    comb$params <- paste0("beta = ", betas[j], "; h = ", hs[i])
+    
+    df <- bind_rows(df, comb)
+    
   }
 }
 
 
 # Plotting ----
-# Need to rethink the plotting to do more of a facet_wrap approach!
-plot_list <- vector(mode = "list", length = nrow(df))
 
-for (i in 1:nrow(df)) {
-  
-  # Merge and tidy the nested data.frames for easier ggplotting
-  df_e <- df$euler[i][[1]][[1]]
-  df_e$method <- "euler"
-  df_h <- df$heun[i][[1]][[1]]
-  df_h$method <- "heun"
-  
-  df_tidy <- bind_rows(df_e, df_h) %>%
-               pivot_longer(S:I, 
-                            names_to = "Box", 
-                            values_to = "Number")
-  
-  p <- si_plot(df_tidy)
-  plot_list[[i]] <- p
-  
-}
+df %>%
+  filter(!is.nan(Number) & Number <= 200 & Number >= -200) %>%
+  ggplot() +
+  geom_line(aes(x = t, 
+                y = Number, 
+                color = Box, 
+                linetype = method)) +
+  scale_color_manual(values = c("firebrick", "darkblue")) +
+  theme_classic() + 
+  facet_wrap(~ params)
+
 
 
