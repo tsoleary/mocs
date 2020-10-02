@@ -43,8 +43,8 @@ initial_state <- c(S = 90, I = 10)
 betas <- c(0.03, 0.06, 0.1)
 # Some thing is going on when h is high -- not sure if there is something wrong
 # Also it seems like a am getting similar solutions to Euler and Huens
-#hs <- c(0.01, 0.5, 2.0)
-hs <- c(0.01, 0.1, .2)
+hs <- c(0.01, 0.5, 2.0)
+#hs <- c(0.01, 0.1, .2)
 
 # Initialize an empty data.frame to store the outputs and information
 df <- tibble(beta = vector(mode = "numeric", length = length(betas)*length(hs)),
@@ -75,11 +75,11 @@ for (j in 1:length(betas)){
                          params = parameters, 
                          init_conds = initial_state)
     
-    # SCount loops
+    # Count loops
     loops <- loops + 1 
     
     # Save results as a nested data.frame with beta and h value in their row
-    df$beta[loops] <- betas[j] 
+    df$beta[loops] <- betas[j]
     df$h[loops] <- hs[i] 
     df$euler[loops] <- nest(out_e, data = everything())
     df$heun[loops] <- nest(out_h, data = everything())

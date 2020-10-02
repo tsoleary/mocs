@@ -13,13 +13,11 @@ sis_model <- function(t, state, params) {
   # Define the variables in the state and parameters
   with(as.list(c(state, params)), {
     
-    dS_dt <- (-beta * S * I) + (gamma * I)
-    dI_dt <- (beta * S * I) - (gamma * I)
+    dS_dt <- -beta*S*I + gamma*I
+    dI_dt <-  beta*S*I - gamma*I
     
     # Return data
     return(c(S = dS_dt, I = dI_dt))
-    
   })
-  
 } 
 # End function -----------------------------------------------------------------
