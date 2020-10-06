@@ -1,10 +1,11 @@
 # ------------------------------------------------------------------------------
 # Function: sis_model
-# Description: description
-# Inputs: input_description
-# Outputs: output_description
+# Description: SIS epidemic model system of differential eqns
+# Inputs: state -- named vector of current values of S and I
+#         params -- named vector of parameters for beta and gamma
+# Outputs: named vector of derivative values at the state position
 
-# Example call:
+# Sample call:
 # state <- c(S = 90, I = 10)
 # params <- c(beta = 0.03, gamma = 0.25)
 # slope <- sis_model(t = 0, state, params)
