@@ -1,0 +1,163 @@
+---
+title: Assignment \# 1
+subtitle: Modeling Complex Systems (CS/CSYS 302)
+author: Lily Shapiro, Mahalia Clark, & Thomas O'Leary
+output:
+  pdf_document:
+geometry: "left=1cm,right=1cm,top=1cm,bottom=1cm"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+require(tidyverse)
+# Source all functions 
+miceadds::source.all(here::here("assignment_1/functions"))
+```
+
+# Question 1
+
+In class, we derived three cases for the equilibrium state of the Lotka-Volterra competition model with two species. Using a phase space diagram, draw the fourth and final possible outcome for this model. Your diagram should include labeled axes, the isoclines with their intercepts, as well as arrows demonstrating the directions of the populations and any equilibrium points circled. 
+
+Does this case have a stable equilibrium point? An unstable equilibrium point?
+
+## IMAGE
+
+## Answer 1
+The above shown outcome for the Lotka-Volterra model, where $k_1 > \frac{K2}{\alpha_2}$ and $k_2 > \frac{K1}{\alpha1}$, results in the existence of two distinct stable equilibria, located where $N_1=K_1$ and $N_2=K_2$, and a third unstable equilibrium point where the nullclines of the two species intersect. Points residing above the blue $N_1$ nullcline and below the red $N_2$ nullcline will head towards competitive exclusion of species 1 (ie. $N_2$ wins), while those above the red $N_2$ nullcline but below the blue $N_1$ nullcline will move towards competitive exclusion of species 2 (ie. $N_1$ wins), defining this intersection as an unstable equilibrium. The outcome of interaction in this given scenario, is therefore dependent on the original abundances of each species. 
+
+
+# Question 2
+
+You are on an environmental preservation team tasked with ensuring diversity in a environment containing two organisms in the same niche. In similar sites, it has been observed that organism 2 quickly dominates and reduces organism 1 to local extinction. One of your colleagues has proposed that intermittently reducing the number of organism 2 individuals, $N_2$, could prevent $N_1$, the number of organism 1 individuals, from crashing. However, your means of reducing $N_2$ is not very precise, and the disturbance will cause both $N_2$ and $N_1$ to decrease by a constant factor $\rho \in (0, 1)$ each time the reduction is applied. That is, at discrete intervals, both $N_1$ and $N_2$ will suddenly be reduced to values $\rho N_1$ and $\rho N_2$.
+
+Do you think your colleague’s suggestion could help preserve healthy levels of both $N_1$ and $N_2$? Support your argument with a sketch using the phase space diagram from question 1. Is there a range of values which $\rho$ must take on for the intervention to be effective? Suppose you can apply the reduction whenever you like (it doesn’t necessarily have to be a fixed schedule).
+
+IMAGE
+
+## Answer 2
+
+The suggestion of our colleague by which we could intermittently decrease the populations of species $N_2$ to preserve the population of organism 1 and prevent it from becoming extinct, is feasible. The above phase-space diagram demonstrates a Lotka-Volterra outcome in which species 2 ($N_2$) dominates over species 1 in between the two isoclines of each respective species.
+
+Our colleague’s suggestion could work. If we get the populations of N1 and N2 down beneath the blue line, $N_2$ will no longer dominate and both populations will grow (until they reach the blue line again). Therefore, we could reduce both populations by a certain percentage to new levels of (rho)N1 and (rho)N2, where:
+	$$0 < \rho N_1 < K_1$$
+	$$0 < \rho N_2 < \frac{K_1}{\alpha_2}$$
+Then we can solve for rho, and we get:
+	$$0 < \rho < \frac{K_1}{N_1}$$
+	$$0 < \rho < \frac{K1}{N_2 \alpha_2}$$
+The relative values of $\frac{K1}{N1}$ and $$\frac{K1}{N_2 \alpha_2}$$ will depend on the values of the parameters, but $\rho$ must be smaller than the smaller expression and greater than zero.
+
+# Question 3
+
+Write your own implementations of Euler’s method and Heun’s method (aka 2nd order Runge-Kutta, aka improved Euler’s method) in the language of your choice. Each function should have a tunable parameter $h$ which represents the step size. 
+
+What is the relationship between Euler’s method and a discrete time model? Chapter 6.4 in the textbook contains a helpful discussion.
+
+
+# Question 4
+
+Numerically solve the continuous SIS model from class using both of your integrators and parameters $N = 100$, $\gamma = 0.25$, and each $\beta \in {0.03, 0.06, 0.1}$. Create 9 different plots showing time series from both your Euler’s and Heun’s method with each of these parameter combinations, as well as using step sizes $h \in {0.01, 0.5, 2.0}$. Include legends to distinguish the pairs of $\beta$ and step sizes, and make sure it is clear which line 1 corresponds to which method. Run the model for 50 steps each time, and use initial values of $(S, I) = (90, 10)$.
+
+## Plots
+
+Is there a noticeable difference between the two methods? What might be going on?
+
+```{r}
+source(here::here("assignment_1/integrate_sis_model.R"))
+```
+
+```{r, fig.height = 3, fig.width = 7}
+# Plotting ----
+df %>%
+  filter(!is.nan(Number) & Number <= 200 & Number >= -100) %>%
+  filter(h == 0.01) %>%
+  ggplot() +
+  geom_line(aes(x = t, 
+                y = Number, 
+                color = Box, 
+                linetype = method)) +
+  scale_color_manual(values = c("firebrick", "darkblue")) +
+  ylim(c(0, 100)) +
+  theme_classic() +
+  facet_wrap(~ params, nrow = 1)
+```
+
+```{r, fig.height = 3, fig.width = 7}
+df %>%
+  filter(!is.nan(Number) & Number <= 200 & Number >= -100) %>%
+  filter(h == 0.5) %>%
+  ggplot() +
+  geom_line(aes(x = t, 
+                y = Number, 
+                color = Box, 
+                linetype = method)) +
+  scale_color_manual(values = c("firebrick", "darkblue")) +
+  #ylim(c(-100, 200)) +
+  theme_classic() +
+  facet_wrap(~ params, nrow = 1)
+```
+
+```{r, fig.height = 3, fig.width = 7}
+df %>%
+  filter(!is.nan(Number) & Number <= 200 & Number >= -100) %>%
+  filter(h == 2) %>%
+  ggplot() +
+  geom_line(aes(x = t, 
+                y = Number, 
+                color = Box, 
+                linetype = method)) +
+  scale_color_manual(values = c("firebrick", "darkblue")) +
+  ylim(c(-100, 200)) +
+  theme_classic() +
+  facet_wrap(~ params, nrow = 1)
+```
+
+
+## Answer 4
+
+Thomas Writes this up!
+
+
+
+# Question 5
+
+Show mathematically that the global precision of Heun’s method is in $h^2$ (where h is the step size). HINT: use $x(t + h) = x(t) + hf(x(t)) + \frac{h^2}{2}f\prime(x(t))  +  ...$ where $f(x(t)) := \frac{dx}{dt} ; ~ f\prime(x(t)) := \frac{df}{dt}$ _etc_.
+
+## Answer 5
+
+If we expand the approximation of x(t + h) with Heun’s method and compare it to x(t+h) as approximated by Taylor Series we can see that the local error of Heun’s method is ~ h3. From there, we can reason that the global error is ~ h2:
+
+Taylor Series: $x(t + h) = x(t) + h x'(t) + \frac{h^2}{2} x''(t) + \frac{h^3}{3!} x''' + \frac{h^4}{4!} x'''' + …$
+
+Heun’s Method: $x_h(t + h) = x(t) + \frac{h^2}{2} ( x'(t) + xe'(t+h) ) = x(t) + \frac{h}{2} x'(t) + \frac{h}{2} x_e'(t+h)$
+
+$$
+\begin{aligned}
+\text{Where:} ~~~~~ x_e(t+h) &= x(t) + hx'(t) ~~~~~~~~ \text{(Euler’s method)} \\
+x_e'(t+h) &= x'(t) + hx''(t) \\
+x_h(t + h) &= x(t) + \frac{h}{2} x'(t) + \frac{h}{2} ( x'(t) + h x''(t) ) \\
+	       &= x(t) + \frac{h}{2} x'(t) + \frac{h}{2} x'(t) + \frac{h}{2} hx''(t) \\
+	       &= x(t) + h x'(t) + \frac{h^2}{2} x''(t) \\
+	       &= \text{the first three terms of Taylor Series}
+\end{aligned}
+$$
+
+
+
+So the local error of Heun's method is mainly governed by the fourth term of the Taylor Series, $\frac{h^3}{3!} x'''$, which is proportional to $h^3$.
+
+To get from local to global error, we add up the errors for each time step from $t = 0$ to $t = T$, so we can multiply the local error by the total number of time steps, calculated as (total time $T$)/(step size $h$). This gives:
+Global error = local error summed over all time steps $~ \frac{T}{h}Oh^3 \sim Oh^2$
+So the global error for Heun’s method is $\sim h_2$
+
+# Question 6
+
+The 2-species Lotka-Volterra predator-prey model is very similar to the SIS epidemic model studied in class. Why did we see cycles in the predator-prey model and not the SIS one? What about SIR or SIRS systems? Should we expect chaos in classic epidemic models?
+
+## Answer 6
+
+# Question 7
+
+Using any system of your choice, come up with your own ODEs to model some phenomena in the system (for example, growth of a population, or spread of a rumor or contagion). The phenomena could be hypothetical, or based on real-world observations that you have studied or read about. Write down what the state variables of your model are, the parameters, and some interesting assumptions you made to simplify the model compared to the real world. Provide several figures of time-series plots with various combinations of parameters and initial conditions. Do you think your model can have cycles and/or stable/unstable equilibria? What do you think your model can tell you about its real-world counterpart?
+
+## Answer 7
+
