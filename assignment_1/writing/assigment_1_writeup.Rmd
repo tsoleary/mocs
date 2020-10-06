@@ -20,7 +20,7 @@ In class, we derived three cases for the equilibrium state of the Lotka-Volterra
 
 Does this case have a stable equilibrium point? An unstable equilibrium point?
 
-## IMAGE
+![](images/q_1_phase_state.png){width=70%}
 
 ## Answer 1
 The above shown outcome for the Lotka-Volterra model, where $k_1 > \frac{K2}{\alpha_2}$ and $k_2 > \frac{K1}{\alpha1}$, results in the existence of two distinct stable equilibria, located where $N_1=K_1$ and $N_2=K_2$, and a third unstable equilibrium point where the nullclines of the two species intersect. Points residing above the blue $N_1$ nullcline and below the red $N_2$ nullcline will head towards competitive exclusion of species 1 (ie. $N_2$ wins), while those above the red $N_2$ nullcline but below the blue $N_1$ nullcline will move towards competitive exclusion of species 2 (ie. $N_1$ wins), defining this intersection as an unstable equilibrium. The outcome of interaction in this given scenario, is therefore dependent on the original abundances of each species. 
@@ -32,7 +32,7 @@ You are on an environmental preservation team tasked with ensuring diversity in 
 
 Do you think your colleague’s suggestion could help preserve healthy levels of both $N_1$ and $N_2$? Support your argument with a sketch using the phase space diagram from question 1. Is there a range of values which $\rho$ must take on for the intervention to be effective? Suppose you can apply the reduction whenever you like (it doesn’t necessarily have to be a fixed schedule).
 
-IMAGE
+![](images/q_2_phase_state.png){width=70%}
 
 ## Answer 2
 
@@ -43,8 +43,8 @@ Our colleague’s suggestion could work. If we get the populations of N1 and N2 
 	$$0 < \rho N_2 < \frac{K_1}{\alpha_2}$$
 Then we can solve for rho, and we get:
 	$$0 < \rho < \frac{K_1}{N_1}$$
-	$$0 < \rho < \frac{K1}{N_2 \alpha_2}$$
-The relative values of $\frac{K1}{N1}$ and $$\frac{K1}{N_2 \alpha_2}$$ will depend on the values of the parameters, but $\rho$ must be smaller than the smaller expression and greater than zero.
+	$$0 < \rho < \frac{K_1}{N_2~\alpha_2}$$
+The relative values of $\frac{K_1}{N_1}$ and $\frac{K_1}{N_2~\alpha_2}$ will depend on the values of the parameters, but $\rho$ must be smaller than the smaller expression and greater than zero.
 
 # Question 3
 
@@ -61,9 +61,11 @@ Numerically solve the continuous SIS model from class using both of your integra
 
 Is there a noticeable difference between the two methods? What might be going on?
 
-```{r}
+```{r, message = FALSE}
 source(here::here("assignment_1/integrate_sis_model.R"))
 ```
+
+### h = 0.01
 
 ```{r, fig.height = 3, fig.width = 7}
 # Plotting ----
@@ -80,6 +82,7 @@ df %>%
   theme_classic() +
   facet_wrap(~ params, nrow = 1)
 ```
+### h = 0.5
 
 ```{r, fig.height = 3, fig.width = 7}
 df %>%
@@ -95,6 +98,8 @@ df %>%
   theme_classic() +
   facet_wrap(~ params, nrow = 1)
 ```
+
+### h = 2.0
 
 ```{r, fig.height = 3, fig.width = 7}
 df %>%
@@ -141,8 +146,6 @@ x_h(t + h) &= x(t) + \frac{h}{2} x'(t) + \frac{h}{2} ( x'(t) + h x''(t) ) \\
 \end{aligned}
 $$
 
-
-
 So the local error of Heun's method is mainly governed by the fourth term of the Taylor Series, $\frac{h^3}{3!} x'''$, which is proportional to $h^3$.
 
 To get from local to global error, we add up the errors for each time step from $t = 0$ to $t = T$, so we can multiply the local error by the total number of time steps, calculated as (total time $T$)/(step size $h$). This gives:
@@ -153,11 +156,24 @@ So the global error for Heun’s method is $\sim h_2$
 
 The 2-species Lotka-Volterra predator-prey model is very similar to the SIS epidemic model studied in class. Why did we see cycles in the predator-prey model and not the SIS one? What about SIR or SIRS systems? Should we expect chaos in classic epidemic models?
 
+![](images/q_6_phase_state.png){width=70%}
+
+
 ## Answer 6
+
+
+
+
+
 
 # Question 7
 
 Using any system of your choice, come up with your own ODEs to model some phenomena in the system (for example, growth of a population, or spread of a rumor or contagion). The phenomena could be hypothetical, or based on real-world observations that you have studied or read about. Write down what the state variables of your model are, the parameters, and some interesting assumptions you made to simplify the model compared to the real world. Provide several figures of time-series plots with various combinations of parameters and initial conditions. Do you think your model can have cycles and/or stable/unstable equilibria? What do you think your model can tell you about its real-world counterpart?
+
+![](images/q_7_box_arrow.png){width=70%}
+
+![](images/q_7_phase_state.png){width=70%}
+
 
 ## Answer 7
 
