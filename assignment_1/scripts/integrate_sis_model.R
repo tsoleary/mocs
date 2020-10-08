@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 # MoCS: Assignment 1: Question 4: Implement Euler' and Heun's on SIS Model
 # September 25, 2020
-# M Clark & TS O'Leary
+# L Shapiro, M Clark, & TS O'Leary
 # ------------------------------------------------------------------------------
 
 # Load required packages
