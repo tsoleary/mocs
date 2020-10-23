@@ -1,29 +1,17 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 22 13:28:51 2020
+# Part 2: DLA ------------------------------------------------------------------
 
-@authors: Mahalia Clark & Thomas O'Leary & Lily Shapiro'
-
-"""
-
-########## Part 2: DLA ##########
-
-###### Imports #####
-
+# Imports -----
 import matplotlib.pyplot as plt
 from matplotlib import colors
 import numpy as np
 
+# Parameters ------
 
-##### Parameters #####
-
-#Params to run fast and watch snowglobe!
+# Params to run fast and watch snowglobe!
 n = 15 # size of space: n x n (make it odd!)
 d = 0.1 # density of particles entering the space
 timesteps = 75
 observe_step = 1
-
 
 # Params to get the prettiest snowflakes!
 # n = 49 # size of space: n x n (make it odd!)
@@ -32,7 +20,7 @@ observe_step = 1
 # observe_step = 1000
 
 
-###### Define IOU Functions #####
+# Define functions ------
 
 def initialize():
     config = np.zeros([n, n])
@@ -55,7 +43,7 @@ def add_snowflakes(config):
     
 def observe(config, t = 0):
     plt.cla()
-    plt.imshow(config, cmap = colors.ListedColormap(['Black','lightsteelblue', 'ghostwhite']))
+    plt.imshow(config, cmap = colors.ListedColormap(['Black', 'lightsteelblue', 'ghostwhite']))
     plt.title('time = %i' %t)
     plt.show()
 
@@ -86,9 +74,7 @@ def update(config, nextconfig):
                 nextconfig[x, y] = 2
     config, nextconfig = nextconfig, config
     # Clear nextconfig
-    for x in range(n):
-        for y in range(n):
-            nextconfig[x, y] = 0
+    nextconfig = np.zeros([n, n])
     return config, nextconfig
 
 def model(timesteps):
@@ -101,12 +87,5 @@ def model(timesteps):
             observe(config, t)
 
 
-# ##### Do Stuff #####
-
+# Run model -----
 model(timesteps)
-
-# config, nextconfig = initialize()
-# config = add_snowflakes(config)
-# observe(config)
-# update(config, nextconfig)
-# observe(nextconfig)

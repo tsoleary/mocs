@@ -1,28 +1,18 @@
-"""
-Created on Thu Oct 22 13:28:51 2020
+# Part 1: Forest Fire CA -------------------------------------------------------
 
-@authors: Mahalia Clark & Thomas O'Leary & Lily Shapiro'
-
-"""
-
-########## Part 1: Forest Fire CA ##########
-
-###### Imports #####
-
+# Imports -----
 import matplotlib.pyplot as plt
 from matplotlib import colors
 import numpy as np
 
-
-##### Parameters #####
+# Parameters -----
 n = 100 # size of space: n x n
-#d = 0.1 # density of trees in our forest
 r = 1 # Moore neighborhood radius
 f_init = 0.001 # initial density of fires
 densities = [i/10 for i in range(1, 11)]
 timesteps = 3
 
-###### Define IOU Functions #####
+# Define Functions -----
 
 def initialize():
     global config, nextconfig
@@ -41,7 +31,7 @@ def initialize():
             else:
                 config[x, y] = 0
     nextconfig = np.zeros([n + 2*r, n + 2*r])
-    
+
 def observe(t):
     global config, nextconfig
     plt.cla()
@@ -62,16 +52,20 @@ def update():
                     else:
                         count += 0
             # Update Rules:
-            # If you're a tree and you are surrounded by any fire, then you become on fire
+            # If you're a tree and you are surrounded by any fire,
+            # then you become on fire
             if config[x, y] == 1 and count >= 1:
                 nextconfig[x, y] = 2
-            # If you're a tree but you are not surrounded by any fire, then you remain a tree
+            # If you're a tree but you are not surrounded by any fire,
+            # then you remain a tree
             elif config[x, y] == 1 and count < 1:
                 nextconfig[x, y] = 1
-            # If you're not a tree, then you remain not a tree
+            # If you're not a tree,
+            # then you remain not a tree
             elif config[x, y] == 0:
                 nextconfig[x, y] = 0
-            # If you're on fire, then you become an empty cell
+            # If you're on fire,
+            # then you become an empty cell
             elif config[x, y] == 2:
                 nextconfig[x, y] = 0
     config, nextconfig = nextconfig, config
@@ -82,7 +76,6 @@ def model(timesteps):
         observe(t)
         update()
 
-##### Do Stuff #####
-
+# Run the model -----
 for d in densities:
     model(timesteps)
