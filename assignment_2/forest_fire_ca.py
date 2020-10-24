@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Modeling Complex Systems
+Assignment 2
+Mahalia Clark & Thomas O'Leary & Lily Shapiro
+"""
+
 # Part 1: Forest Fire CA -------------------------------------------------------
 
 # Imports -----
