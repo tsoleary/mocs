@@ -15,22 +15,12 @@ from matplotlib import colors
 import numpy as np
 
 # Parameters ------
-
-# Params to run fast and watch snowglobe!
-n = 15 # size of space: n x n (make it odd!)
-d = 0.1 # density of particles entering the space
-timesteps = 75
-observe_step = 1
-
-# Params to get the prettiest snowflakes!
-# n = 49 # size of space: n x n (make it odd!)
-# d = 0.0001 # density of particles entering the space
-# timesteps = 21000
-# observe_step = 1000
-
+n = 49 # size of space: n x n (make it odd!)
+d = 0.0001 # density of particles entering the space
+timesteps = 21000
+observe_step = 1000
 
 # Define functions ------
-
 def initialize():
     config = np.zeros([n, n])
     # Add central seed:  
@@ -94,7 +84,6 @@ def model(timesteps):
         config = add_snowflakes(config)
         if t % observe_step == 0:
             observe(config, t)
-
 
 # Run model -----
 model(timesteps)
