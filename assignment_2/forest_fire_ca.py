@@ -16,10 +16,10 @@ import numpy as np
 
 # Parameters -----
 n = 100 # size of space: n x n
-q = 0.6 # probability of fire
-radii = [1, 3] # neighborhood radii to test
-densities = [i/10 for i in range(1, 8)] # range of densities
-timesteps = 50 # total number of time steps to run the model
+q = 0.5 # probability of fire
+radii = [1, 3] # list of neighborhood radii to test
+densities = [0.4, 0.5, 0.6, 0.7, 0.8] # list of densities to test
+timesteps = 150 # total number of time steps to run the model
 reps = 5 # number of stochastic trials to run for each initialization
 
 # Define Functions -----
@@ -41,8 +41,9 @@ def initialize(d):
 
 def observe(config, t):
     # Plot forest
+    cols = ['Black', 'darkgreen', 'orangered', 'grey']
     plt.cla()
-    plt.imshow(config, vmin = 0, vmax = 3, cmap = colors.ListedColormap(['Black','darkgreen', 'orangered', 'grey']))
+    plt.imshow(config, vmin = 0, vmax = 3, cmap = colors.ListedColormap(cols))
     plt.title('time = %i' %t)
     plt.show()
     # Record Areas
@@ -98,21 +99,25 @@ for r in range(0, len(radii)):
             areas[r, i, rep, :, :] = model(timesteps, densities[i])
 
 
-# Plot areas over t:
-plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 1], 'darkgreen')
-plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 2], 'orangered')
-plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 3], 'grey')
-plt.legend(['Trees', 'Burning Trees', 'Burnt Trees'])
-plt.ylabel('Area')
-plt.xlabel('Time step')
-plt.title('Forest Fire Dynamics (radius = 3, density = 0.7, rep = 0)')
-plt.show()
+# Plot areas over time for each parameter value -----
+# Average areas across trials
+areas_rep_avg = areas.mean(axis = 2)
 
-# To do: fix legends in area time plots:
-# Loop through multiple trials, collect data on final areas for each scenario, 5 trials each
-# Calculate means and SDs for each trial to report in a final table in the write up
-# 5 trials each for:
-    # 2 radii (1, 3)
-    # 10 d values [0.1 to 1 by 0.1]
-    # 1 q value = 0.5 --> we can just say in our write up how this has a big
-    #effect on behavior and it's something that could be explored further.
+for radius_plot in range(0, len(radii)):
+    for density_plot in range(0, len(densities)):
+        plt.figure()
+        plt.plot([i for i in range(timesteps)],
+                 areas_rep_avg[radius_plot, density_plot, :, 1], 'darkgreen')
+        plt.plot([i for i in range(timesteps)],
+                 areas_rep_avg[radius_plot, density_plot, :, 2], 'orangered')
+        plt.plot([i for i in range(timesteps)],
+                 areas_rep_avg[radius_plot, density_plot, :, 3], 'grey')
+        plt.legend(['Trees', 'Burning Trees', 'Burnt Trees'])
+        plt.ylabel('Area')
+        plt.xlabel('Time step')
+        plt.title('Forest Fire Dynamics\n'
+                  'radius = '+str(radii[radius_plot])+
+                  ', density = '+str(densities[density_plot])+'')
+        plt.show()
+
+
