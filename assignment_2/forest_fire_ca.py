@@ -16,9 +16,9 @@ import numpy as np
 
 # Parameters -----
 n = 100 # size of space: n x n
-q = 0.75 # probability of fire
+q = 0.5 # probability of fire
 radii = [1, 3] # list of neighborhood radii to test
-densities = [0.5, 0.6, 0.7, 0.8, 9, 1] # list of densities to test
+densities = [i/10 for i in range(4, 11)] # list of densities to test
 timesteps = 100 # total number of time steps to run the model
 reps = 5 # number of stochastic trials to run for each initialization
 
@@ -28,7 +28,7 @@ def initialize(d):
     for x in range(r, n + r):
         for y in range(r, n + r):
             # Light central fires
-            if ((x == 49+r or x ==50+r) and (y == 49+r or y == 50+r)):
+            if ((x == 49 + r or x == 50 + r) and (y == 49 + r or y == 50 + r)):
                 config[x, y] = 2
             # Initialize trees
             elif np.random.random() < d:
@@ -102,6 +102,7 @@ for r in range(0, len(radii)):
 # Plot areas over time for each parameter value -----
 # Average areas across trials
 areas_rep_avg = areas.mean(axis = 2)
+np.save("areas_forest_fire_ca_q_{q}.npy".format(q = q), areas_rep_avg)
 
 for r_i in range(0, len(radii)):
     for d_i in range(0, len(densities)):
@@ -123,6 +124,6 @@ for r_i in range(0, len(radii)):
         r = radii[r_i]
         d = densities[d_i]
         plt.savefig("forest_fire_ca_q_{q}_r_{r}_d_{d}.png".format(r = r,
-                                                                  d = d))
-
+                                                                  d = d,
+                                                                  q = q))
 
