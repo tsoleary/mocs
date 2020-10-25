@@ -16,21 +16,21 @@ import numpy as np
 
 # Parameters -----
 n = 100 # size of space: n x n
-r = 1 # neighborhood radius
 q = 0.6 # probability of fire
-densities = [i/10 for i in range(1, 11)]
-timesteps = 3
+radii = [1, 3] # neighborhood radii to test
+densities = [i/10 for i in range(1, 8)] # range of densities
+timesteps = 50 # total number of time steps to run the model
+reps = 5 # number of stochastic trials to run for each initialization
 
 # Define Functions -----
-
-def initialize():
+def initialize(d):
     config = np.zeros([n + 2*r, n + 2*r])
     for x in range(r, n + r):
         for y in range(r, n + r):
             # Light central fires
             if ((x == 49+r or x ==50+r) and (y == 49+r or y == 50+r)):
                 config[x, y] = 2
-                        # Initialize trees
+            # Initialize trees
             elif np.random.random() < d:
                 config[x, y] = 1
             # Rest empty
@@ -46,9 +46,8 @@ def observe(config, t):
     plt.title('time = %i' %t)
     plt.show()
     # Record Areas
-    areas = [np.count_nonzero(config == i) for i in range(4)]
-    return areas
-
+    area_t = np.array([np.count_nonzero(config == i) for i in range(4)])
+    return area_t
 
 def update(config, nextconfig):
     for x in range(r, n + r):
@@ -78,31 +77,37 @@ def update(config, nextconfig):
     config, nextconfig = nextconfig, config
     return config, nextconfig
 
-
-def model(timesteps):
-    config, nextconfig = initialize()
-    areas = []
+def model(timesteps, d):
+    config, nextconfig = initialize(d)
+    areas_time = np.zeros((timesteps, 4))
     area_0 = observe(config, 0)
-    areas.append(area_0)
+    areas_time[0, :] = area_0
     for t in range(1, timesteps):
         config, nextconfig = update(config, nextconfig)
-        area_i = observe(config, t)
-        areas.append(area_i)
-        areas[t][3] = areas[t][0] - areas[0][0]
-    return areas
-
+        area_t = observe(config, t)
+        areas_time[t, :] = area_t
+        areas_time[t, 3] = areas_time[t, 0] - areas_time[0, 0]
+    return areas_time
 
 # Run the model -----
-for d in densities:
-    model(timesteps)
+areas = np.zeros((len(radii), len(densities), reps, timesteps, 4))
 
-# areas = model(timesteps)
-# areas = np.array(areas)
-# areas = areas.T
+for r in range(0, len(radii)):
+    for i in range(0, len(densities)):
+        for rep in range(0, reps):
+            areas[r, i, rep, :, :] = model(timesteps, densities[i])
+
+
 # Plot areas over t:
-# plt.figure(1)
-# plt.plot([i for i in range(timesteps)], areas[:, 1:4], label = ('Trees', 'Burning Trees', 'Burned Trees'))
-# plt.legend()
+plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 1], 'darkgreen')
+plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 2], 'orangered')
+plt.plot([i for i in range(timesteps)], areas[1, 6, 0, :, 3], 'grey')
+plt.legend(['Trees', 'Burning Trees', 'Burnt Trees'])
+plt.ylabel('Area')
+plt.xlabel('Time step')
+plt.title('Forest Fire Dynamics (radius = 3, density = 0.7, rep = 0)')
+plt.show()
+
 # To do: fix legends in area time plots:
 # Loop through multiple trials, collect data on final areas for each scenario, 5 trials each
 # Calculate means and SDs for each trial to report in a final table in the write up
