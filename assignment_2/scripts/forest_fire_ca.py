@@ -18,12 +18,12 @@ import numpy as np
 n = 100 # size of space: n x n
 q = 0.5 # probability of fire
 radii = [1, 3] # list of neighborhood radii to test
-densities = [i/10 for i in range(4, 11)] # list of densities to test
+densities = [i/10 for i in range(1, 10)] # list of densities to test
 timesteps = 100 # total number of time steps to run the model
 reps = 5 # number of stochastic trials to run for each initialization
 
 # Define Functions -----
-def initialize(d):
+def initialize(n, d, r):
     config = np.zeros([n + 2*r, n + 2*r])
     for x in range(r, n + r):
         for y in range(r, n + r):
@@ -39,18 +39,20 @@ def initialize(d):
     nextconfig = np.zeros([n + 2*r, n + 2*r])
     return config, nextconfig
 
-def observe(config, t):
+def observe_forest(config, t):
     # Plot forest
     cols = ['Black', 'darkgreen', 'orangered', 'grey']
     plt.cla()
     plt.imshow(config, vmin = 0, vmax = 3, cmap = colors.ListedColormap(cols))
     plt.title('time = %i' %t)
     plt.show()
+
+def observe_area(config):
     # Record Areas
     area_t = np.array([np.count_nonzero(config == i) for i in range(4)])
     return area_t
 
-def update(config, nextconfig):
+def update(config, nextconfig, r, q):
     for x in range(r, n + r):
         for y in range(r, n + r):
             count = 0
@@ -78,41 +80,54 @@ def update(config, nextconfig):
     config, nextconfig = nextconfig, config
     return config, nextconfig
 
-def model(timesteps, d):
-    config, nextconfig = initialize(d)
+def watch_forest_burn(timesteps, d, r):
+    config, nextconfig = initialize(n, d, r)
+    observe_forest(config, 0)
+    for t in range(1, timesteps):
+        config, nextconfig = update(config, nextconfig, r, q)
+        observe_forest(config, t)
+
+def model(timesteps, d, r):
+    config, nextconfig = initialize(n, d, r)
     areas_time = np.zeros((timesteps, 4))
-    area_0 = observe(config, 0)
+    area_0 = observe_area(config)
     areas_time[0, :] = area_0
     for t in range(1, timesteps):
-        config, nextconfig = update(config, nextconfig)
-        area_t = observe(config, t)
+        config, nextconfig = update(config, nextconfig, r, q)
+        area_t = observe_area(config)
         areas_time[t, :] = area_t
         areas_time[t, 3] = areas_time[t, 0] - areas_time[0, 0]
     return areas_time
 
-# Run the model -----
+
+# Run the model to watch a forest fire -----
+watch_forest_burn(30, 0.3, 3)
+
+
+# Run the model to record areas -----
 areas = np.zeros((len(radii), len(densities), reps, timesteps, 4))
 
 for r in range(0, len(radii)):
     for i in range(0, len(densities)):
         for rep in range(0, reps):
-            areas[r, i, rep, :, :] = model(timesteps, densities[i])
+            areas[r, i, rep, :, :] = model(timesteps, densities[i], radii[r])
 
 
 # Plot areas over time for each parameter value -----
 # Average areas across trials
 areas_rep_avg = areas.mean(axis = 2)
-np.save("areas_forest_fire_ca_q_{q}.npy".format(q = q), areas_rep_avg)
+np.save("areas_rep_avg_forest_fire_ca_q_{q}.npy".format(q = q), areas_rep_avg)
+np.save("areas_forest_fire_ca_q_{q}.npy".format(q = q), areas)
 
 for r_i in range(0, len(radii)):
     for d_i in range(0, len(densities)):
         plt.figure()
         plt.plot([i for i in range(timesteps)],
-                 areas_rep_avg[r_i, d_i, :, 1], 'darkgreen')
+                  areas_rep_avg[r_i, d_i, :, 1], 'darkgreen')
         plt.plot([i for i in range(timesteps)],
-                 areas_rep_avg[r_i, d_i, :, 2], 'orangered')
+                  areas_rep_avg[r_i, d_i, :, 2], 'orangered')
         plt.plot([i for i in range(timesteps)],
-                 areas_rep_avg[r_i, d_i, :, 3], 'grey')
+                  areas_rep_avg[r_i, d_i, :, 3], 'grey')
         plt.legend(['Trees', 'Burning Trees', 'Burnt Trees'])
         plt.ylabel('Area')
         plt.xlabel('Time step')
@@ -126,4 +141,5 @@ for r_i in range(0, len(radii)):
         plt.savefig("forest_fire_ca_q_{q}_r_{r}_d_{d}.png".format(r = r,
                                                                   d = d,
                                                                   q = q))
+        
 
