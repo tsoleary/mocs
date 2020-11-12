@@ -1,0 +1,94 @@
+---
+title: Assignment \# 3
+subtitle: Modeling Complex Systems (CS/CSYS 302)
+author: Lily Shapiro, Mahalia Clark, & Thomas O'Leary
+output:
+  pdf_document:
+geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
+---
+
+# Question 1: The cascade model
+
+## Part A
+This network will always be acyclic because if we pick a random node, i, and step along one of its outward edges chosen at random to another node i’, and keep stepping along random outward edges from node to node, we can only step to nodes whose value of i is smaller, never larger. So wherever we start, we will always end up at a smaller value of i. We can never step from a node with a small value of i back to a node with a larger value of i, so we can never return to our starting point to complete a loop.
+
+
+## Part B
+To calculate the average in-degree of vertex i we can think about all the nodes that have an index > i, of which there are N - i. Each of these could be connected to node i with a probability p, so the average in-degree of vertex i is (N-i)*p. Conversely, to get the average out-degree of vertex i we can think about the number of nodes with index < i, of which there are (i-1), so the average out-degree of vertex i is (i-1)*p.
+
+
+## Part C
+To calculate the expected number of edges that run from nodes i’ > i (‘big nodes’) to nodes i’ ≤ i (‘small nodes’) we can begin by counting the number of big nodes and the number of small nodes. Then we can think about the expected number of connections between them if nodes in one group are connected to nodes in the other group with probability p. There are N – i nodes with i’ > i (big nodes) and i nodes with i’ ≤ i (small nodes). Any individual node among the N – i big nodes could have up to i edges running to small nodes, one to each of them, and if each of these edges exists with probability p, we would expect any single big node to have i*p edges to small nodes. If we sum these up over all the big nodes, we get a total of (N – i)*i*p edges from big nodes to small nodes, or (N*i – i2)*p edges.
+
+## Part D
+Assuming N is even, what are the largest and smallest values of the quantity calculated in c) and where do they occur (in terms of i)? If we plotted (N*i – i2)*p over i, we would get a downward-facing parabola with roots at i = 0 and i = N. Since  i can only have values from 1 to N, it cannot equal zero, so the smallest value of the function is 0 at i = N. The largest value of the function occurs at the top of the parabola, which is found halfway between the roots, at i = N/2, where the function has a value of N2/4.
+
+
+
+# Question 2
+
+# Question 3
+
+# Question 4
+
+
+
+
+```{r}
+nodes <- readRDS("~R/mocs/assignment_3/data/nodes.rds")
+
+# Plot the degree distribution of the network
+ggplot() + 
+  geom_histogram(data = nodes, aes(x = degree), 
+                 bins = 8, 
+                 color = "grey50", 
+                 fill = "grey30") +
+  ylim(c(0, 13)) +
+  labs(title = "Degree Distribition of United States Network", 
+       y = "Number of States",
+       x = "Degree") +
+  theme_classic()
+```
+
+```{r}
+
+time_df <- readRDS("~R/mocs/assignment_3/data/time_df.rds")
+
+# Tidy the data.frame and average over each trial
+time_df_avg <- time_df %>%
+  pivot_longer(-time, names_to = "lab", values_to = "blue") %>%
+  separate(lab, into = c("init_cond", "Trial"), sep = ":") %>%
+  mutate(red = 49 - blue) %>%
+  group_by(time, init_cond) %>%
+  summarize(blue = mean(blue), 
+            red = mean(red))
+
+# Plot the party's over time
+  ggplot(time_df_avg) +
+  geom_line(aes(x = time, y = blue, linetype = init_cond), color = "blue") + 
+  geom_line(aes(x = time, y = red, linetype = init_cond), color = "red") +
+  labs(title = "Voter model over time", y = "Number of states", x = "Time") +
+  scale_linetype_manual(name = "Initial Map",
+                        values = c(1, 2, 3),
+                        labels = c("2016 Presidential Map", 
+                                   "Based on degree",
+                                   "Assigned randomly")) + 
+  ylim(c(0, 50)) +
+  theme_classic()
+```
+
+```{r}
+# Plot the initial networks
+
+# Color the nodes by the party
+V(net)$color <- V(net)$party_2016
+V(net)$color <- V(net)$party_deg
+V(net)$color <- V(net)$party_rand
+
+# Size the network proportional to population or degree
+V(net)$size <- state_pop$population/1000000
+V(net)$size <- node_degree*3
+
+# Plot the network
+plot(net, layout = layout_with_graphopt)
+```
