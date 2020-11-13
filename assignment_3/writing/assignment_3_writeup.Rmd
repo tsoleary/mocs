@@ -7,53 +7,108 @@ output:
 geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
 ---
 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+require(tidyverse)
+
+# Source
+source("~/R/mocs/assignment_3/scripts/state_net.R")
+```
+
+
 # Question 1: The cascade model
 
 ## Part A
-This network will always be acyclic because if we pick a random node, i, and step along one of its outward edges chosen at random to another node i’, and keep stepping along random outward edges from node to node, we can only step to nodes whose value of i is smaller, never larger. So wherever we start, we will always end up at a smaller value of i. We can never step from a node with a small value of i back to a node with a larger value of i, so we can never return to our starting point to complete a loop.
+This network will always be acyclic because if we pick a random node, $i$, and step along one of its outward edges chosen at random to another node $i'$, and keep stepping along random outward edges from node to node, we can only step to nodes whose value of i is smaller, never larger. So wherever we start, we will always end up at a smaller value of $i$. We can never step from a node with a small value of $i$ back to a node with a larger value of $i$, so we can never return to our starting point to complete a loop.
 
 
 ## Part B
-To calculate the average in-degree of vertex i we can think about all the nodes that have an index > i, of which there are N - i. Each of these could be connected to node i with a probability p, so the average in-degree of vertex i is (N-i)*p. Conversely, to get the average out-degree of vertex i we can think about the number of nodes with index < i, of which there are (i-1), so the average out-degree of vertex i is (i-1)*p.
+To calculate the average in-degree of vertex $i$ we can think about all the nodes that have an index $> i$, of which there are $N - i$. Each of these could be connected to node $i$ with a probability $p$, so the average in-degree of vertex $i$ is $(N-i)*p$. Conversely, to get the average out-degree of vertex $i$ we can think about the number of nodes with index $< i$, of which there are $(i-1)$, so the average out-degree of vertex $i$ is $(i-1)*p$.
 
 
 ## Part C
-To calculate the expected number of edges that run from nodes i’ > i (‘big nodes’) to nodes i’ ≤ i (‘small nodes’) we can begin by counting the number of big nodes and the number of small nodes. Then we can think about the expected number of connections between them if nodes in one group are connected to nodes in the other group with probability p. There are N – i nodes with i’ > i (big nodes) and i nodes with i’ ≤ i (small nodes). Any individual node among the N – i big nodes could have up to i edges running to small nodes, one to each of them, and if each of these edges exists with probability p, we would expect any single big node to have i*p edges to small nodes. If we sum these up over all the big nodes, we get a total of (N – i)*i*p edges from big nodes to small nodes, or (N*i – i2)*p edges.
+To calculate the expected number of edges that run from nodes $i' > i$ (‘big nodes’) to nodes $i' \leq i$ (‘small nodes’) we can begin by counting the number of big nodes and the number of small nodes. Then we can think about the expected number of connections between them if nodes in one group are connected to nodes in the other group with probability p. There are $N–i$ nodes with $i' > i$ (big nodes) and i nodes with $i' \leq i$ (small nodes). Any individual node among the $N–i$ big nodes could have up to i edges running to small nodes, one to each of them, and if each of these edges exists with probability p, we would expect any single big node to have $i*p$ edges to small nodes. If we sum these up over all the big nodes, we get a total of $(N–i)*i*p$ edges from big nodes to small nodes, or $(N*i–i^2)*p$ edges.
 
 ## Part D
-Assuming N is even, what are the largest and smallest values of the quantity calculated in c) and where do they occur (in terms of i)? If we plotted (N*i – i2)*p over i, we would get a downward-facing parabola with roots at i = 0 and i = N. Since  i can only have values from 1 to N, it cannot equal zero, so the smallest value of the function is 0 at i = N. The largest value of the function occurs at the top of the parabola, which is found halfway between the roots, at i = N/2, where the function has a value of N2/4.
+Assuming N is even, what are the largest and smallest values of the quantity calculated in c) and where do they occur (in terms of $i$)? If we plotted $(N*i – i2)*p$ over $i$, we would get a downward-facing parabola with roots at $i = 0$ and $i = N$. Since  $i$ can only have values from $1$ to $N$, it cannot equal zero, so the smallest value of the function is $0$ at $i = N$. The largest value of the function occurs at the top of the parabola, which is found halfway between the roots, at $i = frac{N}{2}$, where the function has a value of $frac{N^2}/{4}$.
 
-
+\pagebreak
 
 # Question 2
 
+
+\pagebreak
+
 # Question 3
+
+Our network represents the 48 contiguous US states in addition to the District of Columbia (49 nodes total). Knowing that question 4 revolved around analyzing the voter model and the capacity of a network to reach consensus (i.e. the same state of all nodes), we thought it pertinent to have our chosen network directly correspond to this, thereby choosing a basic U.S. map. The appearance of the network itself loosely matches with the geographic orientation of states and subregions within the U.S and a view may decipher patterns corresponding to known locations of states in such a network structure, although there are obvious departures as the network needs not necessarily exactly correspond. Clearly the nodes in this network are representative of US states, as labeled, with the edges representing the geographic borders shared between states. Maine is the only U.S. state connected by a single edge, sharing a land border only with New Hampshire (the beautiful seacoast of NH prevents it from coming into contact with Massachusetts). Other states are far more connected, particularly Missouri and Tennessee which have 8 edges apiece. The average degree (or average number of edges shared between states) is 4.28, a logical output as most states share about 4 to 5 borders with other states. 
+
+In Fig() we have displayed the nodes according to betweenness-centrality, where it is obvious that Missouri is the most central state within the network, that is,  it most often acts as a connection between shortest path lengths amongst other nodes. New York also serves as an apparently important central state, acting as an apparent bottleneck, cutting off New England from the rest of the country. States that have high betweenness centrality likely have larger influence on network dynamics, possibly including how and if states will reach a consensus within the voter model. 
+
+The graph is moderately clustered, with a clustering coefficient of $0.507$, which is in accordance with the relatively regular geographic structure of states on the map. Assessing the modularity of the network reveals 6 distinct communities (Fig:) with an associated value of $0.579$. These more densely connected communities may influence each other more than those outside of these communities.
+
+
+\pagebreak
 
 # Question 4
 
+## Part A
 
+Using the network you chose in the previous problem, implement the voter model
+and run it on your network using some initial conditions (i.e. 50% red and 50%
+blue randomly distributed). Averaged over a few runs, does the network tend
+reach consensus? If so, how fast? Try a few different initial conditions.
 
+### Intial Conditions
 
-```{r}
-nodes <- readRDS("~R/mocs/assignment_3/data/nodes.rds")
+```{r, fig.height = 6, fig.width = 3}
+# # Plot the initial networks
+# net <- graph_from_data_frame(d = edges,
+#                              vertices = nodes, 
+#                              directed = FALSE)
 
-# Plot the degree distribution of the network
-ggplot() + 
-  geom_histogram(data = nodes, aes(x = degree), 
-                 bins = 8, 
-                 color = "grey50", 
-                 fill = "grey30") +
-  ylim(c(0, 13)) +
-  labs(title = "Degree Distribition of United States Network", 
-       y = "Number of States",
-       x = "Degree") +
-  theme_classic()
+# # Size the network proportional to population or degree
+# V(net)$size <- state_pop$population/1000000
+# V(net)$size <- node_degree*3
+
+# Plot the initial networks
+
+# # 2016 map
+# set.seed(12)
+# V(net)$color <- V(net)$party_2016
+# p1 <- plot(net, layout = layout_with_graphopt)
+# 
+# # By degree
+# V(net)$color <- V(net)$party_deg
+# p2 <- plot(net, layout = layout_with_graphopt)
+# 
+# # Random
+# V(net)$color <- V(net)$party_rand
+# p3 <- plot(net, layout = layout_with_graphopt)
+
+# p1 <- cowplot::ggdraw() + 
+#   cowplot::draw_image("~/R/mocs/assignment_3/data/2016_map.png") +
+#   cowplot::draw_label("2016 Presidential Map", x = 0.25, y = 0.5)
+# p2 <- cowplot::ggdraw() + 
+#   cowplot::draw_image("~/R/mocs/assignment_3/data/deg_map.png") +
+#   cowplot::draw_label("Degree-based Map", x = 0.35, y = 0.65)
+# p3 <- cowplot::ggdraw() + 
+#   cowplot::draw_image("~/R/mocs/assignment_3/data/rand_map.png") +
+#   cowplot::draw_label("Random Map", x = 0.4, y = 0.75)
+# 
+# 
+# # Plot all together
+# cowplot::plot_grid(p1, p2, p3, nrow = 3)
+
+cowplot::ggdraw() + 
+   cowplot::draw_image("~/R/mocs/assignment_3/data/all_maps.png")
 ```
 
-```{r}
+**Fig. XXX:** Graphical representation of the intiail conditions for the networks for each of the initial conditions that we tested, 2016 Presidential Map (top), Degree-based map (middle), and a Random Map (bottom).
 
-time_df <- readRDS("~R/mocs/assignment_3/data/time_df.rds")
+# Voter Model Runs
 
+```{r, fig.height = 3, fig.width = 7}
 # Tidy the data.frame and average over each trial
 time_df_avg <- time_df %>%
   pivot_longer(-time, names_to = "lab", values_to = "blue") %>%
@@ -77,18 +132,27 @@ time_df_avg <- time_df %>%
   theme_classic()
 ```
 
-```{r}
-# Plot the initial networks
 
-# Color the nodes by the party
-V(net)$color <- V(net)$party_2016
-V(net)$color <- V(net)$party_deg
-V(net)$color <- V(net)$party_rand
+## Part B
 
-# Size the network proportional to population or degree
-V(net)$size <- state_pop$population/1000000
-V(net)$size <- node_degree*3
+Now, find the degree distribution of your network and run (or imagine) the voter
+model using a resulting configuration model network. How do you expect the
+dynamics to compare to the real network? Explain with simulation results or in
+words.
 
-# Plot the network
-plot(net, layout = layout_with_graphopt)
+
+```{r, fig.height = 1.5, fig.width = 2.5}
+# Plot the degree distribution of the network
+ggplot() + 
+  geom_histogram(data = nodes, aes(x = degree), 
+                 bins = 8, 
+                 color = "grey50", 
+                 fill = "grey30") +
+  ylim(c(0, 13)) +
+  labs(title = "Degree Distribition of the United States Network", 
+       y = "Number of States",
+       x = "Degree") +
+  theme_classic()
 ```
+
+**Fig. XXX:** Degree distribution of the United States Map Network

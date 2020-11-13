@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # MoCS: Assignment # 3
-# November 11, 2020
+# November 13, 2020
 # TS O'Leary, Lily Shapiro, & Mahalia Clark
 # ------------------------------------------------------------------------------
 
@@ -66,43 +66,30 @@ nodes <- nodes %>%
 net <- graph_from_data_frame(d = edges, vertices = nodes, directed = FALSE)
 
 
-# Run the voter model on three sets of initial conditions for 5 reps each ------
-init_cols <- c("party_2016", "party_rand", "party_deg")
-n_timesteps <-  10000
-num_reps <- 20
-time_df <- tibble(time = 1:n_timesteps) 
+# # Run the voter model on three sets of initial conditions for 5 reps each ------
+# init_cols <- c("party_2016", "party_rand", "party_deg")
+# n_timesteps <-  10000
+# num_reps <- 20
+# time_df <- tibble(time = 1:n_timesteps) 
+# 
+# for (i in 1:length(init_cols)){
+#   
+#   for (rep in 1:num_reps) {
+#     # Run the model
+#     result <- voter_model(nodes, edges, init_cols[i], n_timesteps = n_timesteps)
+#     
+#     # Store the result
+#     nodes[, paste(init_cols[i], rep, sep = ":")] <- result$party_final
+#     time_df[, paste(init_cols[i], rep, sep = ":")] <- result$n_blue
+#   }
+#   
+# }
 
-for (i in 1:length(init_cols)){
-  
-  for (rep in 1:num_reps) {
-    # Run the model
-    result <- voter_model(nodes, edges, init_cols[i], n_timesteps = n_timesteps)
-    
-    # Store the result
-    nodes[, paste(init_cols[i], rep, sep = ":")] <- result$party_final
-    time_df[, paste(init_cols[i], rep, sep = ":")] <- result$n_blue
-  }
-  
-}
+# # Save the time_df data.frame to load in the write_up
+# saveRDS(time_df, "~/R/mocs/assignment_3/data/time_df.rds")
+# # Save the nodes too
+# saveRDS(nodes, "~/R/mocs/assignment_3/data/nodes.rds")
 
-# Save the time_df data.frame to load in the write_up
-saveRDS(time_df, "~R/mocs/assignment_3/data/time_df.rds")
-# Save the nodes too
-saveRDS(nodes, "~R/mocs/assignment_3/data/nodes.rds")
-
-
-# Create a network object
-net <- graph_from_data_frame(d = edges,
-                              vertices = nodes, 
-                              directed = FALSE)
-
-
-# Plot the network
-plot(net, layout = layout_with_graphopt)
-
-
-
-
-
-
-
+# Read in the nodes and time_df data run earlier
+time_df <- readRDS("~/R/mocs/assignment_3/data/time_df.rds")
+nodes <- readRDS("~/R/mocs/assignment_3/data/nodes.rds")
