@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Modeling Complex Systems
+Assignment 3
+Mahalia Clark & Thomas O'Leary & Lily Shapiro
+"""
+
+
+########## Question 2: Heterogeneous Mean Field SIS Model on a Configuration Model Network ##########
+
+###### Imports #####
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+##### Parameters #####
+
+# Variable parameters
+rho = 0.1 # we'll vary this param (what % of trasmission rate remains after vaccination)
+initial_percent_infected = 0.5 #Kind of arbitrary, let's start with 0.5 or 0.1
+kmax = 10 # let's stick with 10 which covers 95% of nodes
+timesteps = 500 # How many timesteps to run the model for
+h = 0.01 # time step for integrator 
+
+# Given parameters
+beta = 0.3 # transmission rate
+alpha = 1 # recovery rate
+p = 0.25 # used to calculate degree distribution
+v = 0.4 # % of people who are vaccinated
+
+
+###### Define Functions #####
+
+def degree_dist(kmax, p):
+    # Calculate degree distribution
+    ks = [i for i in range(kmax+1)]
+    pks = [] # store fraction of nodes of each degree
+    sum_pks = [] # Cummulative fraction of nodes in each degree class and those of lesser degree
+    for k in range(kmax+1):
+        # calculate and store pks and their sums:
+        pk = p*(1 - p)**k
+        pks.append(pk)
+        sum_pks.append(sum(pks)) # If 60% are unvaccinated class k = 3 will be split
+    pks = np.array(pks) # convert to array for vector math
+    ks = np.array(ks)
+    sum_pks = np.array(sum_pks)
+    return ks, pks, sum_pks
+
+def random_vac(pks, v, initial_percent_infected):
+    # Vaccinate some folks randomly (uniformly across classes)
+    pkvs = v*pks # vaccinated fractions of each degree k
+    pkus = pks - pkvs # unvaccinated fractions of each degree k
+    
+    # Initialize Is (infect a given percent uniformly across classes)
+    Ius = pkus*initial_percent_infected
+    Ivs = pkvs*initial_percent_infected
+    return pkus, pkvs, Ius, Ivs
+
+def pop_vac(ks, pks, sum_pks, v, initial_percent_infected):
+    # Vaccinate 40% most popular (highest degree) nodes
+    pkus = [0 for k in ks] # initialize 0 vectors of correct length
+    pkvs = [0 for k in ks]
+    counter = 0 # find split class
+    for k in ks:
+        if sum_pks[k] <= (1-v):
+            pkus[k] = pks[k]
+            counter += 1
+        else:
+            pkvs[k] = pks[k]
+    pkvs[counter] = sum_pks[counter] - (1-v)
+    pkus[counter] = pks[counter] - pkvs[counter]  
+    
+    # Convert to arrays for math
+    pkus = np.array(pkus)
+    pkvs = np.array(pkvs)
+    
+    # Initialize Is (infect a given percent uniformly across classes)
+    Ius = pkus*initial_percent_infected
+    Ivs = pkvs*initial_percent_infected
+    return pkus, pkvs, Ius, Ivs
+
+def calc_theta(ks, pkus, pkvs, Ius, Ivs):
+    # Calculate theta
+    theta_num = 0 # numerator
+    theta_den = 0 # denomenator
+    for k in ks:
+        theta_num += k*Ius[k]
+        theta_num += k*Ivs[k]
+        theta_den += k*pkus[k]
+        theta_den += k*pkvs[k]
+    theta = theta_num/theta_den
+    return theta
+
+def u_sis(alpha, beta, ks, pkus, Ius, theta, rho):
+    # Differential equations for slopes of each vaccinated and unvaccinated infected class
+    dIudts = (beta/alpha)*ks*(pkus - Ius)*theta - Ius
+    return dIudts # Returns two vectors of slopes
+
+def v_sis(alpha, beta, ks, pkvs, Ivs, theta, rho):
+    dIvdts = rho*(beta/alpha)*ks*(pkvs - Ivs)*theta - Ivs
+    return dIvdts # Returns vector of slopes
+
+def heun(fxn, h, timesteps, pks, Is, alpha, beta, ks, theta, rho):
+    # Create empty array
+    matrix = np.zeros((timesteps + 1, len(ks)))
+    # Initialize values
+    state = Is
+    matrix[0, :] = state
+    # Iterate through euler method for given timesteps
+    for n in range(1, timesteps+1):
+        state_euler = state + h * fxn(alpha, beta, ks, pks, state, theta, rho)
+        state = state + h * (fxn(alpha, beta, ks, pks, state, theta, rho) 
+                             + fxn(alpha, beta, ks, pks, state_euler, theta, rho))/2
+        matrix[n, :] = state
+    return matrix
+    
+
+##### Question 2c) Random Vaccination #####
+
+# Find degree distribution and get vectors with k and pk
+ks, pks, sum_pks = degree_dist(kmax, p)
+
+# Plot degree distribution for fun if you like!
+plt.figure(0)
+plt.plot(ks, pks) 
+plt.title('Degree Distribution')
+plt.ylabel('Fraction')
+plt.xlabel('Degree')
+
+# Vaccinate a random 40% of the population (which we'll treat as vaccinating 40% of each degree class)
+# And get initial conditions
+pkus, pkvs, Ius, Ivs = random_vac(pks, v, initial_percent_infected)
+
+# Calculate theta
+theta = calc_theta(ks, pkus, pkvs, Ius, Ivs)
+
+# Apply ODE Integrator to get infected fractions over time
+u_matrix = heun(u_sis, h, timesteps, pkus, Ius, alpha, beta, ks, theta, rho)
+v_matrix = heun(v_sis, h, timesteps, pkvs, Ivs, alpha, beta, ks, theta, rho)
+
+# All we actually care about is the total I (and S) at each time, so lets sum them.
+u_sums = np.sum(u_matrix, 1)
+v_sums = np.sum(v_matrix, 1)
+Is = u_sums+v_sums
+Ss = 1 - Is
+ts = [t for t in range(timesteps + 1)]
+
+# Plot Figure:
+plt.figure(1)
+plt.plot(ts, Is, label = 'I: random vaccination')
+plt.plot(ts, Ss, label = 'S: random vaccination')
+plt.title('Infections over time')
+plt.ylabel('Fraction of nodes')
+plt.xlabel('Timestep (h = {})'.format(h))
+
+# Vary rho:
+rhos = [0, 0.05, 0.25, 0.5, 1]
+# Loop through the whole shebang for each value of rho
+for r in rhos:
+    # Apply ODE Integrator to get infected fractions over time
+    u_matrix = heun(u_sis, h, timesteps, pkus, Ius, alpha, beta, ks, theta, r)
+    v_matrix = heun(v_sis, h, timesteps, pkvs, Ivs, alpha, beta, ks, theta, r)    
+    # All we actually care about is the total I (and S) at each time, so lets sum them.
+    u_sums = np.sum(u_matrix, 1)
+    v_sums = np.sum(v_matrix, 1)
+    Is = u_sums+v_sums
+    Ss = 1 - Is
+    ts = [t for t in range(timesteps + 1)]
+    # Plot Figure:
+    plt.figure(2)
+    plt.plot(ts, Is, label = 'rho = {}'.format(r))
+    # plt.plot(ts, Ss, label = 'S: rho = {}'.format(r))
+    plt.title('Infections over time: random vaccination')
+    plt.ylabel('Fraction of nodes infected')
+    plt.xlabel('Timestep (h = {})'.format(h))
+    plt.ylim((0, 0.5))
+    plt.legend()
+
+
+##### Question 2d) Random Vaccination #####
+
+# Vaccinate 40% of nodes with highest degrees and get initial conditions
+pkus, pkvs, Ius, Ivs = pop_vac(ks, pks, sum_pks, v, initial_percent_infected)
+
+# Calculate theta
+theta = calc_theta(ks, pkus, pkvs, Ius, Ivs)
+
+# Figure out ODE...?!?!?!
+u_matrix = heun(u_sis, h, timesteps, pkus, Ius, alpha, beta, ks, theta, rho)
+v_matrix = heun(v_sis, h, timesteps, pkvs, Ivs, alpha, beta, ks, theta, rho)
+
+# All we actually care about is the total I (and S) at each time, so lets sum them.
+u_sums = np.sum(u_matrix, 1)
+v_sums = np.sum(v_matrix, 1)
+Is = u_sums+v_sums
+Ss = 1 - Is
+ts = [t for t in range(timesteps + 1)]
+
+# Plot Figure:
+plt.figure(1)
+plt.plot(ts, Is, label = 'I: vaccination by degree')
+plt.plot(ts, Ss, label = 'S: random vaccination')
+plt.legend()
+
+# Loop through the whole shebang for each value of rho
+for r in rhos:
+    # Apply ODE Integrator to get infected fractions over time
+    u_matrix = heun(u_sis, h, timesteps, pkus, Ius, alpha, beta, ks, theta, r)
+    v_matrix = heun(v_sis, h, timesteps, pkvs, Ivs, alpha, beta, ks, theta, r)    
+    # All we actually care about is the total I (and S) at each time, so lets sum them.
+    u_sums = np.sum(u_matrix, 1)
+    v_sums = np.sum(v_matrix, 1)
+    Is = u_sums+v_sums
+    Ss = 1 - Is
+    ts = [t for t in range(timesteps + 1)]
+    # Plot Figure:
+    plt.figure(3)
+    plt.plot(ts, Is, label = 'rho = {}'.format(r))
+    # plt.plot(ts, Ss, label = 'S: rho = {}'.format(r))
+    plt.title('Infections over time: vaccination by degree')
+    plt.ylabel('Fraction of nodes infected')
+    plt.xlabel('Timestep (h = {})'.format(h))
+    plt.ylim((0, 0.5))
+    plt.legend()
