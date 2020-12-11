@@ -1,0 +1,3895 @@
+​ p5 had problems creating the global function "shuffle", possibly because your code is already using that name as a variable. You may want to rename your variable to something else.
+​ HGRY 0.15 550 0.35 0.95 250
+​ [Violation] Added synchronous DOM mutation listener to a 'DOMNodeInserted' event. Consider using MutationObserver to make the page more responsive.
+setupListener @ ​
+main_content_script @ ​
+(anonymous) @ ​
+​ 1 0 0
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+[Violation] 'requestAnimationFrame' handler took <N>ms
+​ 2 42 216
+​ 3 42 217
+​ 4 42 221
+​ 5 42 227
+​ 6 42 231
+​ 7 42 231
+​ 8 42 233
+​ 9 42 234
+​ 10 42 235
+​ 11 42 235
+​ 12 42 236
+​ 13 42 234
+​ 14 42 235
+​ 15 42 235
+​ 16 42 235
+​ 17 42 236
+​ 18 42 236
+​ 19 42 237
+​ 20 42 235
+​ 21 42 235
+​ 22 42 235
+​ 23 42 235
+​ 24 42 236
+​ 25 42 238
+​ 26 42 238
+​ 27 44 236
+​ 28 44 236
+​ 29 44 237
+​ 30 44 236
+​ 31 44 237
+​ 32 44 238
+​ 33 44 238
+​ 34 44 238
+​ 35 44 238
+​ 36 43 239
+​ 37 44 238
+​ 38 44 238
+​ 39 44 238
+​ 40 44 238
+​ 41 44 238
+​ 42 45 238
+​ 43 45 238
+​ 44 45 238
+​ 45 45 239
+​ 46 45 239
+​ 47 45 241
+​ 48 45 240
+​ 49 45 240
+​ 50 45 240
+​ 51 45 241
+​ 52 45 241
+​ 53 45 238
+​ 54 45 238
+​ 55 45 239
+​ 56 46 238
+​ 57 46 238
+​ 58 46 238
+​ 59 46 238
+​ 60 46 238
+​ 61 46 239
+​ 62 46 238
+​ 63 47 238
+​ 64 47 238
+​ 65 47 236
+​ 66 46 237
+​ 67 46 238
+​ 68 46 238
+​ 69 45 239
+​ 70 45 240
+​ 71 45 240
+​ 72 45 240
+​ 73 45 239
+​ 74 45 238
+​ 75 44 239
+​ 76 44 239
+​ 77 44 239
+​ 78 44 239
+​ 79 44 239
+​ 80 44 240
+​ 81 44 240
+​ 82 45 239
+​ 83 46 238
+​ 84 46 238
+​ 85 47 239
+​ 86 47 239
+​ 87 47 239
+​ 88 47 240
+​ 89 47 240
+​ 90 47 240
+​ 91 47 240
+​ 92 47 241
+​ 93 47 241
+​ 94 47 241
+​ 95 47 241
+​ 96 47 240
+​ 97 47 241
+​ 98 47 241
+​ 99 47 241
+​ 100 47 240
+​ 101 47 241
+​ 102 47 241
+​ 103 47 241
+​ 104 46 241
+​ 105 47 241
+​ 106 47 242
+​ 107 47 241
+​ 108 47 241
+​ 109 47 241
+​ 110 47 241
+​ 111 47 241
+​ 112 47 242
+​ 113 48 241
+​ 114 48 242
+​ 115 48 242
+​ 116 48 242
+​ 117 48 242
+​ 118 48 242
+​ 119 48 242
+​ 120 49 242
+​ 121 49 242
+​ 122 48 242
+​ 123 49 240
+​ 124 49 239
+​ 125 48 239
+​ 126 48 239
+​ 127 48 239
+​ 128 48 240
+​ 129 49 239
+​ 130 49 239
+​ 131 49 239
+​ 132 49 239
+​ 133 49 239
+​ 134 49 239
+​ 135 49 237
+​ 136 49 238
+​ 137 49 238
+​ 138 49 238
+​ 139 49 239
+​ 140 49 239
+​ 141 49 238
+​ 142 49 238
+​ 143 49 238
+​ 144 49 237
+​ 145 48 238
+​ 146 48 238
+​ 147 48 233
+​ 148 47 234
+​ 149 46 235
+​ 150 47 235
+​ 151 46 236
+​ 152 46 236
+​ 153 46 235
+​ 154 46 235
+​ 155 46 235
+​ 156 45 236
+​ 157 45 237
+​ 158 45 237
+​ 159 45 237
+​ 160 46 237
+​ 161 46 237
+​ 162 46 237
+​ 163 45 237
+​ 164 45 236
+​ 165 45 235
+​ 166 45 235
+​ 167 45 238
+​ 168 45 238
+​ 169 46 237
+​ 170 47 235
+​ 171 47 234
+​ 172 47 234
+​ 173 47 233
+​ 174 47 233
+​ 175 48 232
+​ 176 48 232
+​ 177 48 231
+​ 178 48 231
+​ 179 48 231
+​ 180 48 231
+​ 181 48 230
+​ 182 48 230
+​ 183 48 229
+​ 184 47 231
+​ 185 47 231
+​ 186 46 230
+​ 187 46 231
+​ 188 45 230
+​ 189 45 228
+​ 190 45 227
+​ 191 45 226
+​ 192 45 227
+​ 193 45 227
+​ 194 46 226
+​ 195 46 226
+​ 196 46 226
+​ 197 46 225
+​ 198 47 224
+​ 199 47 222
+​ 200 47 222
+​ 201 47 222
+​ 202 48 219
+​ 203 47 220
+​ 204 47 220
+​ 205 47 220
+​ 206 47 221
+​ 207 47 222
+​ 208 49 221
+​ 209 49 222
+​ 210 49 220
+​ 211 49 221
+​ 212 49 221
+​ 213 48 220
+​ 214 51 215
+​ 215 50 215
+​ 216 50 216
+​ 217 50 216
+​ 218 50 217
+​ 219 50 217
+​ 220 50 219
+​ 221 49 220
+​ 222 49 220
+​ 223 49 219
+​ 224 49 218
+​ 225 50 217
+​ 226 50 217
+​ 227 50 218
+​ 228 50 218
+​ 229 50 217
+​ 230 50 218
+​ 231 50 218
+​ 232 50 218
+​ 233 50 217
+​ 234 50 218
+​ 235 51 218
+​ 236 51 218
+​ 237 52 217
+​ 238 52 218
+​ 239 52 217
+​ 240 51 218
+​ 241 51 217
+​ 242 50 218
+​ 243 50 218
+​ 244 50 218
+​ 245 50 219
+​ 246 49 220
+​ 247 49 220
+​ 248 49 220
+​ 249 50 219
+​ 250 50 218
+​ 251 50 218
+​ 252 50 218
+​ 253 49 218
+​ 254 49 218
+​ 255 49 220
+​ 256 49 222
+​ 257 49 222
+​ 258 48 223
+​ 259 47 225
+​ 260 47 227
+​ 261 48 225
+​ 262 48 227
+​ 263 48 228
+​ 264 48 228
+​ 265 49 227
+​ 266 49 227
+​ 267 50 225
+​ 268 50 225
+​ 269 50 225
+​ 270 49 224
+​ 271 49 224
+​ 272 49 223
+​ 273 49 223
+​ 274 51 221
+​ 275 51 221
+​ 276 50 220
+​ 277 49 221
+​ 278 49 221
+​ 279 49 222
+​ 280 48 223
+​ 281 48 223
+​ 282 48 223
+​ 283 48 223
+​ 284 48 223
+​ 285 48 223
+​ 286 49 220
+​ 287 49 220
+​ 288 49 221
+​ 289 49 221
+​ 290 49 221
+​ 291 49 222
+​ 292 49 221
+​ 293 48 221
+​ 294 49 222
+​ 295 49 222
+​ 296 50 221
+​ 297 50 222
+​ 298 50 223
+​ 299 50 224
+​ 300 51 224
+​ 301 51 223
+​ 302 51 224
+​ 303 51 224
+​ 304 51 223
+​ 305 51 224
+​ 306 51 225
+​ 307 51 227
+​ 308 52 225
+​ 309 52 225
+​ 310 52 225
+​ 311 52 226
+​ 312 53 226
+​ 313 52 226
+​ 314 52 226
+​ 315 51 225
+​ 316 51 225
+​ 317 51 225
+​ 318 51 225
+​ 319 51 226
+​ 320 51 229
+​ 321 52 229
+​ 322 52 227
+​ 323 52 227
+​ 324 53 226
+​ 325 53 225
+​ 326 53 226
+​ 327 53 225
+​ 328 53 226
+​ 329 53 229
+​ 330 53 230
+​ 331 53 230
+​ 332 55 226
+​ 333 55 226
+​ 334 56 226
+​ 335 56 228
+​ 336 57 227
+​ 337 57 226
+​ 338 56 227
+​ 339 56 227
+​ 340 56 227
+​ 341 56 227
+​ 342 56 227
+​ 343 56 227
+​ 344 56 227
+​ 345 56 227
+​ 346 56 226
+​ 347 56 225
+​ 348 56 224
+​ 349 57 224
+​ 350 57 226
+​ 351 58 225
+​ 352 58 225
+​ 353 58 225
+​ 354 58 226
+​ 355 58 225
+​ 356 58 226
+​ 357 58 226
+​ 358 59 224
+​ 359 59 225
+​ 360 59 226
+​ 361 59 226
+​ 362 59 225
+​ 363 58 226
+​ 364 58 227
+​ 365 58 227
+​ 366 58 227
+​ 367 58 226
+​ 368 57 226
+​ 369 56 227
+​ 370 56 228
+​ 371 56 228
+​ 372 56 230
+​ 373 55 229
+​ 374 55 230
+​ 375 55 230
+​ 376 55 230
+​ 377 55 232
+​ 378 57 230
+​ 379 57 230
+​ 380 57 230
+​ 381 57 232
+​ 382 56 230
+​ 383 55 231
+​ 384 55 230
+​ 385 55 230
+​ 386 55 230
+​ 387 55 230
+​ 388 55 231
+​ 389 56 229
+​ 390 56 229
+​ 391 56 229
+​ 392 56 229
+​ 393 56 229
+​ 394 56 230
+​ 395 56 229
+​ 396 56 230
+​ 397 56 230
+​ 398 57 228
+​ 399 57 228
+​ 400 58 227
+​ 401 58 226
+​ 402 58 225
+​ 403 58 223
+​ 404 57 224
+​ 405 57 223
+​ 406 57 223
+​ 407 57 222
+​ 408 56 221
+​ 409 56 221
+​ 410 56 221
+​ 411 56 221
+​ 412 56 222
+​ 413 55 222
+​ 414 56 220
+​ 415 56 220
+​ 416 56 219
+​ 417 56 218
+​ 418 56 218
+​ 419 56 216
+​ 420 55 215
+​ 421 55 215
+​ 422 55 215
+​ 423 56 213
+​ 424 56 212
+​ 425 55 213
+​ 426 56 215
+​ 427 56 215
+​ 428 56 213
+​ 429 55 213
+​ 430 54 213
+​ 431 54 214
+​ 432 54 213
+​ 433 53 213
+​ 434 53 213
+​ 435 54 214
+​ 436 54 214
+​ 437 54 216
+​ 438 54 217
+​ 439 54 217
+​ 440 56 213
+​ 441 56 213
+​ 442 56 213
+​ 443 58 210
+​ 444 58 212
+​ 445 58 213
+​ 446 58 212
+​ 447 57 212
+​ 448 57 212
+​ 449 57 213
+​ 450 57 212
+​ 451 57 212
+​ 452 57 212
+​ 453 57 212
+​ 454 57 212
+​ 455 57 212
+​ 456 57 212
+​ 457 57 212
+​ 458 57 213
+​ 459 57 214
+​ 460 58 212
+​ 461 59 209
+​ 462 60 210
+​ 463 60 210
+​ 464 60 209
+​ 465 60 208
+​ 466 59 207
+​ 467 59 207
+​ 468 59 208
+​ 469 59 208
+​ 470 59 207
+​ 471 60 206
+​ 472 60 207
+​ 473 60 207
+​ 474 60 206
+​ 475 60 205
+​ 476 61 204
+​ 477 61 204
+​ 478 61 205
+​ 479 61 204
+​ 480 61 205
+​ 481 62 204
+​ 482 63 204
+​ 483 63 206
+​ 484 64 208
+​ 485 64 208
+​ 486 64 207
+​ 487 64 206
+​ 488 65 205
+​ 489 65 205
+​ 490 65 205
+​ 491 65 207
+​ 492 65 207
+​ 493 66 206
+​ 494 68 204
+​ 495 68 205
+​ 496 68 206
+​ 497 67 206
+​ 498 69 205
+​ 499 69 205
+​ 500 69 205
+​ 501 68 205
+​ 502 68 203
+​ 503 67 205
+​ 504 67 205
+​ 505 67 205
+​ 506 67 205
+​ 507 66 205
+​ 508 66 204
+​ 509 66 204
+​ 510 65 204
+​ 511 65 204
+​ 512 65 203
+​ 513 65 203
+​ 514 65 203
+​ 515 65 203
+​ 516 65 203
+​ 517 65 206
+​ 518 65 205
+​ 519 65 204
+​ 520 65 204
+​ 521 65 204
+​ 522 65 203
+​ 523 65 202
+​ 524 65 202
+​ 525 65 203
+​ 526 66 203
+​ 527 66 203
+​ 528 66 205
+​ 529 66 205
+​ 530 66 206
+​ 531 66 206
+​ 532 66 206
+​ 533 65 206
+​ 534 65 208
+​ 535 64 208
+​ 536 65 208
+​ 537 64 208
+​ 538 64 208
+​ 539 64 207
+​ 540 63 207
+​ 541 63 210
+​ 542 63 210
+​ 543 63 210
+​ 544 63 210
+​ 545 64 212
+​ 546 64 212
+​ 547 65 212
+​ 548 65 213
+​ 549 65 214
+​ 550 65 215
+​ 551 65 215
+​ 552 65 215
+​ 553 65 215
+​ 554 65 216
+​ 555 65 217
+​ 556 65 217
+​ 557 65 216
+​ 558 64 217
+​ 559 64 217
+​ 560 63 216
+​ 561 63 217
+​ 562 63 216
+​ 563 62 217
+​ 564 62 218
+​ 565 62 218
+​ 566 62 219
+​ 567 62 218
+​ 568 62 218
+​ 569 64 216
+​ 570 64 217
+​ 571 64 217
+​ 572 65 214
+​ 573 65 213
+​ 574 65 215
+​ 575 66 214
+​ 576 67 212
+​ 577 67 211
+​ 578 67 209
+​ 579 66 207
+​ 580 66 207
+​ 581 66 207
+​ 582 67 206
+​ 583 67 206
+​ 584 67 206
+​ 585 68 206
+​ 586 69 204
+​ 587 69 204
+​ 588 69 204
+​ 589 69 204
+​ 590 69 203
+​ 591 68 202
+​ 592 70 200
+​ 593 70 200
+​ 594 70 199
+​ 595 70 198
+​ 596 70 198
+​ 597 70 198
+​ 598 70 198
+​ 599 70 199
+​ 600 70 198
+​ 601 70 198
+​ 602 69 198
+​ 603 69 199
+​ 604 69 199
+​ 605 68 199
+​ 606 68 199
+​ 607 68 199
+​ 608 69 200
+​ 609 69 201
+​ 610 68 199
+​ 611 70 196
+​ 612 70 194
+​ 613 69 194
+​ 614 69 194
+​ 615 69 194
+​ 616 69 197
+​ 617 68 195
+​ 618 68 196
+​ 619 68 196
+​ 620 68 195
+​ 621 68 194
+​ 622 68 195
+​ 623 68 194
+​ 624 68 193
+​ 625 69 192
+​ 626 69 191
+​ 627 69 191
+​ 628 69 190
+​ 629 69 192
+​ 630 71 188
+​ 631 71 189
+​ 632 71 189
+​ 633 72 187
+​ 634 72 188
+​ 635 72 188
+​ 636 72 188
+​ 637 72 188
+​ 638 72 188
+​ 639 72 187
+​ 640 71 189
+​ 641 71 189
+​ 642 71 189
+​ 643 71 188
+​ 644 71 187
+​ 645 72 187
+​ 646 72 188
+​ 647 72 189
+​ 648 72 190
+​ 649 71 191
+​ 650 71 188
+​ 651 71 188
+​ 652 69 189
+​ 653 69 190
+​ 654 69 192
+​ 655 69 193
+​ 656 69 193
+​ 657 69 194
+​ 658 69 195
+​ 659 68 195
+​ 660 69 194
+​ 661 70 194
+​ 662 70 195
+​ 663 71 193
+​ 664 72 192
+​ 665 72 191
+​ 666 72 192
+​ 667 72 190
+​ 668 72 193
+​ 669 72 193
+​ 670 72 195
+​ 671 72 196
+​ 672 72 197
+​ 673 72 198
+​ 674 72 199
+​ 675 70 200
+​ 676 72 199
+​ 677 72 201
+​ 678 72 201
+​ 679 72 203
+​ 680 74 202
+​ 681 74 202
+​ 682 74 201
+​ 683 74 201
+​ 684 74 201
+​ 685 74 201
+​ 686 74 202
+​ 687 73 202
+​ 688 72 202
+​ 689 72 202
+​ 690 72 201
+​ 691 71 202
+​ 692 71 202
+​ 693 70 200
+​ 694 69 203
+​ 695 69 203
+​ 696 69 203
+​ 697 69 202
+​ 698 69 201
+​ 699 69 200
+​ 700 68 201
+​ 701 68 201
+​ 702 68 200
+​ 703 68 200
+​ 704 69 201
+​ 705 69 200
+​ 706 70 199
+​ 707 69 200
+​ 708 69 201
+​ 709 69 201
+​ 710 68 202
+​ 711 67 202
+​ 712 67 202
+​ 713 66 202
+​ 714 64 203
+​ 715 66 200
+​ 716 66 202
+​ 717 65 201
+​ 718 66 202
+​ 719 66 202
+​ 720 66 205
+​ 721 65 206
+​ 722 65 206
+​ 723 65 206
+​ 724 66 203
+​ 725 65 204
+​ 726 65 206
+​ 727 65 206
+​ 728 65 205
+​ 729 65 204
+​ 730 65 204
+​ 731 65 204
+​ 732 65 204
+​ 733 66 203
+​ 734 66 202
+​ 735 67 201
+​ 736 67 200
+​ 737 68 200
+​ 738 68 200
+​ 739 68 202
+​ 740 68 202
+​ 741 68 202
+​ 742 68 202
+​ 743 68 202
+​ 744 68 202
+​ 745 68 202
+​ 746 68 201
+​ 747 68 203
+​ 748 69 201
+​ 749 68 202
+​ 750 69 200
+​ 751 69 199
+​ 752 69 200
+​ 753 69 199
+​ 754 69 200
+​ 755 69 200
+​ 756 69 200
+​ 757 68 200
+​ 758 68 200
+​ 759 68 202
+​ 760 67 202
+​ 761 68 201
+​ 762 68 201
+​ 763 68 201
+​ 764 68 201
+​ 765 68 200
+​ 766 68 200
+​ 767 68 201
+​ 768 67 202
+​ 769 68 203
+​ 770 68 203
+​ 771 68 204
+​ 772 68 205
+​ 773 69 203
+​ 774 68 203
+​ 775 67 202
+​ 776 67 203
+​ 777 67 200
+​ 778 66 201
+​ 779 66 200
+​ 780 65 200
+​ 781 65 200
+​ 782 65 198
+​ 783 65 197
+​ 784 66 196
+​ 785 66 198
+​ 786 66 198
+​ 787 66 197
+​ 788 67 196
+​ 789 67 196
+​ 790 67 196
+​ 791 67 197
+​ 792 67 197
+​ 793 68 197
+​ 794 68 198
+​ 795 68 198
+​ 796 69 199
+​ 797 69 198
+​ 798 69 197
+​ 799 69 196
+​ 800 69 196
+​ 801 69 195
+​ 802 69 198
+​ 803 69 199
+​ 804 69 199
+​ 805 69 200
+​ 806 68 200
+​ 807 68 202
+​ 808 68 201
+​ 809 67 202
+​ 810 67 202
+​ 811 67 203
+​ 812 68 202
+​ 813 67 204
+​ 814 67 204
+​ 815 67 206
+​ 816 65 209
+​ 817 65 211
+​ 818 66 210
+​ 819 66 211
+​ 820 65 211
+​ 821 65 211
+​ 822 64 212
+​ 823 63 213
+​ 824 63 212
+​ 825 63 212
+​ 826 63 212
+​ 827 63 211
+​ 828 63 211
+​ 829 63 210
+​ 830 63 211
+​ 831 64 210
+​ 832 63 210
+​ 833 64 209
+​ 834 64 209
+​ 835 63 209
+​ 836 62 208
+​ 837 62 208
+​ 838 62 208
+​ 839 62 209
+​ 840 62 209
+​ 841 63 207
+​ 842 63 208
+​ 843 64 208
+​ 844 64 209
+​ 845 64 210
+​ 846 64 210
+​ 847 64 210
+​ 848 64 209
+​ 849 64 209
+​ 850 64 209
+​ 851 64 208
+​ 852 63 209
+​ 853 63 210
+​ 854 63 210
+​ 855 64 210
+​ 856 65 210
+​ 857 65 210
+​ 858 66 210
+​ 859 66 212
+​ 860 66 213
+​ 861 66 212
+​ 862 66 212
+​ 863 67 211
+​ 864 67 210
+​ 865 67 212
+​ 866 67 211
+​ 867 66 213
+​ 868 66 217
+​ 869 66 219
+​ 870 66 219
+​ 871 66 219
+​ 872 66 219
+​ 873 66 217
+​ 874 66 219
+​ 875 66 219
+​ 876 67 217
+​ 877 66 217
+​ 878 66 217
+​ 879 66 217
+​ 880 66 218
+​ 881 65 221
+​ 882 65 221
+​ 883 65 221
+​ 884 64 221
+​ 885 64 221
+​ 886 64 221
+​ 887 63 221
+​ 888 63 221
+​ 889 63 221
+​ 890 63 220
+​ 891 63 220
+​ 892 63 219
+​ 893 63 220
+​ 894 63 219
+​ 895 63 219
+​ 896 63 219
+​ 897 63 220
+​ 898 63 220
+​ 899 63 220
+​ 900 63 219
+​ 901 63 219
+​ 902 57 219
+​ 903 63 212
+​ 904 62 213
+​ 905 61 214
+​ 906 61 213
+​ 907 61 214
+​ 908 60 214
+​ 909 60 214
+​ 910 60 213
+​ 911 60 213
+​ 912 60 213
+​ 913 58 214
+​ 914 58 214
+​ 915 57 214
+​ 916 57 215
+​ 917 56 215
+​ 918 56 215
+​ 919 56 217
+​ 920 57 216
+​ 921 57 217
+​ 922 57 216
+​ 923 57 218
+​ 924 57 219
+​ 925 57 219
+​ 926 56 219
+​ 927 56 219
+​ 928 57 219
+​ 929 57 217
+​ 930 57 217
+​ 931 57 218
+​ 932 57 218
+​ 933 57 218
+​ 934 57 219
+​ 935 57 219
+​ 936 57 218
+​ 937 58 217
+​ 938 58 219
+​ 939 57 220
+​ 940 57 220
+​ 941 57 225
+​ 942 57 226
+​ 943 59 225
+​ 944 59 226
+​ 945 59 226
+​ 946 59 227
+​ 947 59 228
+​ 948 59 229
+​ 949 59 231
+​ 950 58 235
+​ 951 59 235
+​ 952 59 235
+​ 953 59 236
+​ 954 59 236
+​ 955 60 235
+​ 956 60 235
+​ 957 60 235
+​ 958 60 236
+​ 959 60 238
+​ 960 59 237
+​ 961 59 239
+​ 962 59 238
+​ 963 60 238
+​ 964 60 239
+​ 965 62 237
+​ 966 61 239
+​ 967 61 240
+​ 968 61 241
+​ 969 61 241
+​ 970 61 241
+​ 971 61 240
+​ 972 61 240
+​ 973 62 238
+​ 974 61 239
+​ 975 61 239
+​ 976 61 240
+​ 977 60 242
+​ 978 60 241
+​ 979 60 240
+​ 980 61 239
+​ 981 62 237
+​ 982 62 237
+​ 983 62 237
+​ 984 62 239
+​ 985 62 241
+​ 986 62 241
+​ 987 63 240
+​ 988 63 238
+​ 989 63 239
+​ 990 63 239
+​ 991 63 238
+​ 992 61 239
+​ 993 62 237
+​ 994 62 238
+​ 995 63 237
+​ 996 63 239
+​ 997 63 239
+​ 998 63 239
+​ 999 63 239
+​ 1000 63 239
+​ 1001 63 237
+​ 1002 63 238
+​ 1003 63 237
+​ 1004 63 237
+​ 1005 63 235
+​ 1006 63 235
+​ 1007 63 235
+​ 1008 64 234
+​ 1009 65 232
+​ 1010 66 230
+​ 1011 66 230
+​ 1012 66 229
+​ 1013 66 229
+​ 1014 66 226
+​ 1015 66 226
+​ 1016 66 225
+​ 1017 67 222
+​ 1018 67 223
+​ 1019 67 226
+​ 1020 67 226
+​ 1021 67 227
+​ 1022 66 227
+​ 1023 66 227
+​ 1024 67 228
+​ 1025 68 227
+​ 1026 68 228
+​ 1027 67 229
+​ 1028 67 230
+​ 1029 66 230
+​ 1030 66 230
+​ 1031 66 229
+​ 1032 66 228
+​ 1033 66 228
+​ 1034 66 228
+​ 1035 66 228
+​ 1036 66 229
+​ 1037 67 227
+​ 1038 67 227
+​ 1039 67 228
+​ 1040 67 228
+​ 1041 66 228
+​ 1042 66 229
+​ 1043 65 228
+​ 1044 65 228
+​ 1045 65 228
+​ 1046 65 228
+​ 1047 65 229
+​ 1048 65 229
+​ 1049 64 231
+​ 1050 64 231
+​ 1051 64 231
+​ 1052 64 231
+​ 1053 64 231
+​ 1054 64 231
+​ 1055 64 231
+​ 1056 64 231
+​ 1057 66 229
+​ 1058 64 228
+​ 1059 64 228
+​ 1060 64 228
+​ 1061 65 226
+​ 1062 65 226
+​ 1063 66 225
+​ 1064 67 225
+​ 1065 67 226
+​ 1066 67 226
+​ 1067 68 224
+​ 1068 68 225
+​ 1069 72 223
+​ 1070 73 222
+​ 1071 74 223
+​ 1072 75 224
+​ 1073 75 225
+​ 1074 74 225
+​ 1075 74 224
+​ 1076 74 225
+​ 1077 74 225
+​ 1078 74 225
+​ 1079 74 226
+​ 1080 74 226
+​ 1081 74 224
+​ 1082 73 225
+​ 1083 72 224
+​ 1084 72 225
+​ 1085 72 226
+​ 1086 72 228
+​ 1087 72 228
+​ 1088 73 227
+​ 1089 71 228
+​ 1090 71 227
+​ 1091 71 228
+​ 1092 71 228
+​ 1093 71 228
+​ 1094 71 228
+​ 1095 71 227
+​ 1096 71 225
+​ 1097 71 225
+​ 1098 71 224
+​ 1099 71 224
+​ 1100 71 223
+​ 1101 70 226
+​ 1102 71 226
+​ 1103 71 224
+​ 1104 73 222
+​ 1105 73 221
+​ 1106 73 223
+​ 1107 73 224
+​ 1108 73 223
+​ 1109 72 224
+​ 1110 73 223
+​ 1111 73 225
+​ 1112 73 225
+​ 1113 73 225
+​ 1114 73 225
+​ 1115 73 226
+​ 1116 73 226
+​ 1117 73 227
+​ 1118 73 228
+​ 1119 74 227
+​ 1120 74 227
+​ 1121 74 228
+​ 1122 73 228
+​ 1123 73 227
+​ 1124 74 226
+​ 1125 74 227
+​ 1126 74 228
+​ 1127 74 228
+​ 1128 74 228
+​ 1129 73 229
+​ 1130 73 228
+​ 1131 73 228
+​ 1132 73 228
+​ 1133 74 228
+​ 1134 75 227
+​ 1135 75 227
+​ 1136 75 228
+​ 1137 74 229
+​ 1138 74 229
+​ 1139 73 230
+​ 1140 73 232
+​ 1141 73 234
+​ 1142 73 235
+​ 1143 73 233
+​ 1144 73 233
+​ 1145 73 231
+​ 1146 73 232
+​ 1147 73 232
+​ 1148 73 232
+​ 1149 73 234
+​ 1150 73 235
+​ 1151 73 236
+​ 1152 74 237
+​ 1153 75 238
+​ 1154 75 237
+​ 1155 76 236
+​ 1156 76 234
+​ 1157 76 233
+​ 1158 76 233
+​ 1159 77 232
+​ 1160 77 230
+​ 1161 77 231
+​ 1162 77 230
+​ 1163 77 231
+​ 1164 78 230
+​ 1165 79 228
+​ 1166 80 223
+​ 1167 80 221
+​ 1168 78 223
+​ 1169 80 220
+​ 1170 80 219
+​ 1171 80 219
+​ 1172 80 218
+​ 1173 80 219
+​ 1174 80 219
+​ 1175 80 218
+​ 1176 79 219
+​ 1177 80 218
+​ 1178 80 220
+​ 1179 80 220
+​ 1180 81 217
+​ 1181 82 217
+​ 1182 82 217
+​ 1183 82 213
+​ 1184 82 214
+​ 1185 82 214
+​ 1186 82 212
+​ 1187 82 212
+​ 1188 82 213
+​ 1189 83 215
+​ 1190 83 217
+​ 1191 83 216
+​ 1192 82 217
+​ 1193 84 215
+​ 1194 84 216
+​ 1195 83 214
+​ 1196 82 215
+​ 1197 82 214
+​ 1198 82 214
+​ 1199 82 217
+​ 1200 83 217
+​ 1201 81 219
+​ 1202 81 219
+​ 1203 81 217
+​ 1204 82 218
+​ 1205 82 216
+​ 1206 82 218
+​ 1207 82 219
+​ 1208 82 218
+​ 1209 83 217
+​ 1210 84 215
+​ 1211 83 216
+​ 1212 83 216
+​ 1213 82 218
+​ 1214 84 216
+​ 1215 83 216
+​ 1216 83 215
+​ 1217 83 216
+​ 1218 83 216
+​ 1219 83 220
+​ 1220 84 219
+​ 1221 84 219
+​ 1222 84 222
+​ 1223 83 222
+​ 1224 82 222
+​ 1225 82 225
+​ 1226 83 223
+​ 1227 83 223
+​ 1228 83 223
+​ 1229 83 226
+​ 1230 84 226
+​ 1231 84 227
+​ 1232 85 226
+​ 1233 85 226
+​ 1234 85 226
+​ 1235 86 225
+​ 1236 85 224
+​ 1237 85 224
+​ 1238 87 223
+​ 1239 86 223
+​ 1240 87 224
+​ 1241 87 226
+​ 1242 87 225
+​ 1243 86 223
+​ 1244 87 222
+​ 1245 87 221
+​ 1246 86 222
+​ 1247 85 222
+​ 1248 86 220
+​ 1249 86 221
+​ 1250 86 220
+​ 1251 85 223
+​ 1252 85 223
+​ 1253 85 226
+​ 1254 86 226
+​ 1255 86 226
+​ 1256 86 227
+​ 1257 87 226
+​ 1258 88 224
+​ 1259 88 224
+​ 1260 88 225
+​ 1261 88 225
+​ 1262 88 222
+​ 1263 89 222
+​ 1264 90 220
+​ 1265 89 221
+​ 1266 89 219
+​ 1267 90 219
+​ 1268 91 218
+​ 1269 90 219
+​ 1270 90 218
+​ 1271 91 216
+​ 1272 92 214
+​ 1273 92 214
+​ 1274 92 214
+​ 1275 92 216
+​ 1276 92 218
+​ 1277 92 217
+​ 1278 91 217
+​ 1279 92 219
+​ 1280 91 218
+​ 1281 90 221
+​ 1282 91 221
+​ 1283 92 222
+​ 1284 91 223
+​ 1285 91 224
+​ 1286 91 228
+​ 1287 91 232
+​ 1288 92 232
+​ 1289 92 232
+​ 1290 93 231
+​ 1291 93 226
+​ 1292 95 229
+​ 1293 94 230
+​ 1294 93 230
+​ 1295 93 231
+​ 1296 93 230
+​ 1297 92 230
+​ 1298 92 230
+​ 1299 90 231
+​ 1300 91 231
+​ 1301 92 229
+​ 1302 93 228
+​ 1303 93 229
+​ 1304 93 228
+​ 1305 93 227
+​ 1306 94 226
+​ 1307 95 224
+​ 1308 94 225
+​ 1309 96 223
+​ 1310 97 221
+​ 1311 95 220
+​ 1312 96 219
+​ 1313 96 221
+​ 1314 97 222
+​ 1315 97 222
+​ 1316 97 223
+​ 1317 97 224
+​ 1318 97 224
+​ 1319 97 228
+​ 1320 97 227
+​ 1321 97 227
+​ 1322 96 226
+​ 1323 94 227
+​ 1324 94 227
+​ 1325 95 226
+​ 1326 95 225
+​ 1327 94 225
+​ 1328 95 223
+​ 1329 95 223
+​ 1330 95 225
+​ 1331 95 223
+​ 1332 95 227
+​ 1333 94 226
+​ 1334 94 227
+​ 1335 94 229
+​ 1336 95 229
+​ 1337 96 229
+​ 1338 95 231
+​ 1339 96 227
+​ 1340 96 226
+​ 1341 96 226
+​ 1342 95 227
+​ 1343 95 228
+​ 1344 95 229
+​ 1345 94 228
+​ 1346 94 228
+​ 1347 94 230
+​ 1348 94 231
+​ 1349 94 230
+​ 1350 91 231
+​ 1351 92 233
+​ 1352 93 231
+​ 1353 92 232
+​ 1354 92 234
+​ 1355 92 235
+​ 1356 93 234
+​ 1357 93 235
+​ 1358 93 235
+​ 1359 91 236
+​ 1360 90 238
+​ 1361 90 239
+​ 1362 90 240
+​ 1363 90 240
+​ 1364 90 240
+​ 1365 90 239
+​ 1366 89 239
+​ 1367 89 239
+​ 1368 89 238
+​ 1369 89 240
+​ 1370 89 239
+​ 1371 88 240
+​ 1372 88 241
+​ 1373 89 240
+​ 1374 89 240
+​ 1375 89 240
+​ 1376 89 240
+​ 1377 89 239
+​ 1378 88 240
+​ 1379 87 239
+​ 1380 86 239
+​ 1381 87 239
+​ 1382 87 239
+​ 1383 87 239
+​ 1384 87 238
+​ 1385 87 239
+​ 1386 87 240
+​ 1387 87 239
+​ 1388 86 241
+​ 1389 88 238
+​ 1390 87 237
+​ 1391 87 236
+​ 1392 87 235
+​ 1393 87 234
+​ 1394 88 233
+​ 1395 88 238
+​ 1396 88 238
+​ 1397 88 238
+​ 1398 88 239
+​ 1399 88 238
+​ 1400 88 238
+​ 1401 89 237
+​ 1402 89 237
+​ 1403 89 238
+​ 1404 89 238
+​ 1405 87 238
+​ 1406 87 237
+​ 1407 86 235
+​ 1408 85 235
+​ 1409 87 233
+​ 1410 87 231
+​ 1411 87 234
+​ 1412 90 233
+​ 1413 90 232
+​ 1414 90 232
+​ 1415 90 232
+​ 1416 90 232
+​ 1417 89 231
+​ 1418 88 233
+​ 1419 89 233
+​ 1420 89 235
+​ 1421 89 236
+​ 1422 88 237
+​ 1423 87 235
+​ 1424 86 237
+​ 1425 86 237
+​ 1426 87 235
+​ 1427 86 234
+​ 1428 86 234
+​ 1429 86 236
+​ 1430 87 234
+​ 1431 87 234
+​ 1432 87 235
+​ 1433 88 235
+​ 1434 89 233
+​ 1435 88 233
+​ 1436 88 233
+​ 1437 88 233
+​ 1438 89 233
+​ 1439 89 234
+​ 1440 89 234
+​ 1441 87 236
+​ 1442 87 238
+​ 1443 87 238
+​ 1444 86 234
+​ 1445 85 234
+​ 1446 84 235
+​ 1447 84 237
+​ 1448 84 241
+​ 1449 83 241
+​ 1450 83 241
+​ 1451 84 242
+​ 1452 84 241
+​ 1453 84 241
+​ 1454 84 240
+​ 1455 84 240
+​ 1456 84 241
+​ 1457 85 241
+​ 1458 85 243
+​ 1459 85 243
+​ 1460 86 245
+​ 1461 86 246
+​ 1462 86 246
+​ 1463 86 245
+​ 1464 85 244
+​ 1465 84 244
+​ 1466 84 244
+​ 1467 84 246
+​ 1468 83 246
+​ 1469 83 248
+​ 1470 84 248
+​ 1471 84 248
+​ 1472 84 248
+​ 1473 84 247
+​ 1474 84 248
+​ 1475 84 247
+​ 1476 85 245
+​ 1477 87 242
+​ 1478 86 239
+​ 1479 84 241
+​ 1480 84 241
+​ 1481 84 240
+​ 1482 84 241
+​ 1483 85 241
+​ 1484 87 239
+​ 1485 87 237
+​ 1486 86 237
+​ 1487 87 237
+​ 1488 88 235
+​ 1489 88 235
+​ 1490 87 236
+​ 1491 86 238
+​ 1492 86 236
+​ 1493 85 234
+​ 1494 85 236
+​ 1495 85 236
+​ 1496 84 237
+​ 1497 84 236
+​ 1498 86 233
+​ 1499 88 232
+​ 1500 87 234
+​ 1501 87 233
+​ 1502 87 233
+​ 1503 87 233
+​ 1504 87 233
+​ 1505 87 233
+​ 1506 87 234
+​ 1507 87 234
+​ 1508 88 231
+​ 1509 90 229
+​ 1510 92 226
+​ 1511 93 226
+​ 1512 92 225
+​ 1513 95 224
+​ 1514 95 223
+​ 1515 94 223
+​ 1516 94 223
+​ 1517 95 219
+​ 1518 96 218
+​ 1519 98 217
+​ 1520 97 215
+​ 1521 97 215
+​ 1522 97 214
+​ 1523 97 214
+​ 1524 97 217
+​ 1525 97 217
+​ 1526 97 215
+​ 1527 97 215
+​ 1528 97 213
+​ 1529 97 213
+​ 1530 97 214
+​ 1531 97 215
+​ 1532 97 211
+​ 1533 97 212
+​ 1534 97 211
+​ 1535 97 210
+​ 1536 97 208
+​ 1537 98 205
+​ 1538 96 207
+​ 1539 97 207
+​ 1540 97 207
+​ 1541 95 211
+​ 1542 95 212
+​ 1543 94 212
+​ 1544 94 210
+​ 1545 94 209
+​ 1546 93 210
+​ 1547 94 207
+​ 1548 94 208
+​ 1549 93 207
+​ 1550 93 208
+​ 1551 93 207
+​ 1552 94 207
+​ 1553 94 206
+​ 1554 94 205
+​ 1555 93 203
+​ 1556 92 203
+​ 1557 91 202
+​ 1558 91 201
+​ 1559 90 199
+​ 1560 90 203
+​ 1561 90 202
+​ 1562 91 200
+​ 1563 91 201
+​ 1564 93 197
+​ 1565 94 195
+​ 1566 94 193
+​ 1567 94 189
+​ 1568 93 191
+​ 1569 92 190
+​ 1570 93 193
+​ 1571 94 192
+​ 1572 92 192
+​ 1573 92 193
+​ 1574 92 195
+​ 1575 93 194
+​ 1576 93 196
+​ 1577 93 193
+​ 1578 92 191
+​ 1579 94 189
+​ 1580 96 187
+​ 1581 96 188
+​ 1582 96 189
+​ 1583 98 189
+​ 1584 97 190
+​ 1585 97 192
+​ 1586 97 193
+​ 1587 97 196
+​ 1588 97 199
+​ 1589 97 199
+​ 1590 96 202
+​ 1591 96 203
+​ 1592 99 202
+​ 1593 98 202
+​ 1594 98 201
+​ 1595 98 201
+​ 1596 98 200
+​ 1597 96 203
+​ 1598 95 204
+​ 1599 95 204
+​ 1600 95 209
+​ 1601 96 211
+​ 1602 96 210
+​ 1603 97 212
+​ 1604 96 212
+​ 1605 96 212
+​ 1606 96 215
+​ 1607 97 214
+​ 1608 97 215
+​ 1609 96 216
+​ 1610 97 218
+​ 1611 97 218
+​ 1612 97 218
+​ 1613 97 220
+​ 1614 95 220
+​ 1615 95 220
+​ 1616 95 219
+​ 1617 95 218
+​ 1618 96 215
+​ 1619 96 216
+​ 1620 95 218
+​ 1621 97 215
+​ 1622 97 215
+​ 1623 97 217
+​ 1624 97 223
+​ 1625 98 224
+​ 1626 98 227
+​ 1627 98 228
+​ 1628 98 231
+​ 1629 98 231
+​ 1630 98 230
+​ 1631 96 231
+​ 1632 97 229
+​ 1633 97 232
+​ 1634 97 232
+​ 1635 97 234
+​ 1636 98 239
+​ 1637 98 238
+​ 1638 97 241
+​ 1639 98 242
+​ 1640 98 244
+​ 1641 97 245
+​ 1642 97 249
+​ 1643 97 253
+​ 1644 98 253
+​ 1645 98 258
+​ 1646 98 258
+​ 1647 98 261
+​ 1648 97 263
+​ 1649 96 267
+​ 1650 94 266
+​ 1651 95 264
+​ 1652 95 264
+​ 1653 95 265
+​ 1654 95 264
+​ 1655 95 263
+​ 1656 95 263
+​ 1657 98 262
+​ 1658 98 263
+​ 1659 98 267
+​ 1660 98 265
+​ 1661 100 262
+​ 1662 99 264
+​ 1663 99 263
+​ 1664 98 269
+​ 1665 102 268
+​ 1666 102 268
+​ 1667 102 266
+​ 1668 102 265
+​ 1669 101 266
+​ 1670 101 265
+​ 1671 101 267
+​ 1672 102 266
+​ 1673 101 267
+​ 1674 102 266
+​ 1675 103 263
+​ 1676 105 260
+​ 1677 105 259
+​ 1678 104 261
+​ 1679 104 261
+​ 1680 104 259
+​ 1681 105 259
+​ 1682 105 260
+​ 1683 105 261
+​ 1684 105 261
+​ 1685 105 262
+​ 1686 106 262
+​ 1687 106 263
+​ 1688 106 265
+​ 1689 107 261
+​ 1690 107 263
+​ 1691 108 263
+​ 1692 107 265
+​ 1693 110 263
+​ 1694 110 262
+​ 1695 109 261
+​ 1696 109 262
+​ 1697 109 263
+​ 1698 108 264
+​ 1699 108 262
+​ 1700 106 264
+​ 1701 106 265
+​ 1702 107 265
+​ 1703 106 265
+​ 1704 107 263
+​ 1705 109 264
+​ 1706 108 261
+​ 1707 110 260
+​ 1708 111 256
+​ 1709 112 256
+​ 1710 114 254
+​ 1711 115 256
+​ 1712 114 256
+​ 1713 115 257
+​ 1714 116 257
+​ 1715 115 257
+​ 1716 115 257
+​ 1717 116 257
+​ 1718 116 258
+​ 1719 116 258
+​ 1720 115 259
+​ 1721 116 258
+​ 1722 118 259
+​ 1723 120 258
+​ 1724 120 257
+​ 1725 119 257
+​ 1726 119 260
+​ 1727 119 258
+​ 1728 117 258
+​ 1729 117 258
+​ 1730 118 256
+​ 1731 117 257
+​ 1732 119 255
+​ 1733 121 252
+​ 1734 122 250
+​ 1735 122 252
+​ 1736 121 252
+​ 1737 121 254
+​ 1738 120 251
+​ 1739 123 249
+​ 1740 124 248
+​ 1741 123 247
+​ 1742 123 248
+​ 1743 124 250
+​ 1744 124 249
+​ 1745 126 246
+​ 1746 127 245
+​ 1747 127 244
+​ 1748 126 243
+​ 1749 128 239
+​ 1750 128 237
+​ 1751 128 235
+​ 1752 129 236
+​ 1753 130 235
+​ 1754 130 233
+​ 1755 131 233
+​ 1756 131 231
+​ 1757 131 229
+​ 1758 130 231
+​ 1759 131 230
+​ 1760 131 230
+​ 1761 132 229
+​ 1762 132 229
+​ 1763 132 226
+​ 1764 129 224
+​ 1765 129 227
+​ 1766 129 227
+​ 1767 130 225
+​ 1768 130 223
+​ 1769 129 223
+​ 1770 130 225
+​ 1771 130 225
+​ 1772 131 225
+​ 1773 131 225
+​ 1774 129 229
+​ 1775 129 232
+​ 1776 129 235
+​ 1777 129 234
+​ 1778 129 235
+​ 1779 129 234
+​ 1780 130 233
+​ 1781 130 233
+​ 1782 129 234
+​ 1783 129 231
+​ 1784 131 234
+​ 1785 130 238
+​ 1786 131 239
+​ 1787 131 239
+​ 1788 130 240
+​ 1789 131 240
+​ 1790 132 238
+​ 1791 133 238
+​ 1792 132 240
+​ 1793 132 240
+​ 1794 131 244
+​ 1795 130 244
+​ 1796 134 241
+​ 1797 136 238
+​ 1798 135 237
+​ 1799 137 236
+​ 1800 138 236
+​ 1801 138 235
+​ 1802 139 234
+​ 1803 141 233
+​ 1804 140 236
+​ 1805 139 238
+​ 1806 139 238
+​ 1807 138 239
+​ 1808 140 236
+​ 1809 140 236
+​ 1810 140 234
+​ 1811 140 233
+​ 1812 141 231
+​ 1813 140 231
+​ 1814 139 231
+​ 1815 141 228
+​ 1816 141 229
+​ 1817 142 230
+​ 1818 142 233
+​ 1819 142 233
+​ 1820 143 231
+​ 1821 145 232
+​ 1822 144 231
+​ 1823 145 231
+​ 1824 142 232
+​ 1825 142 236
+​ 1826 142 238
+​ 1827 142 238
+​ 1828 142 240
+​ 1829 140 240
+​ 1830 141 238
+​ 1831 141 238
+​ 1832 143 235
+​ 1833 145 235
+​ 1834 146 235
+​ 1835 146 236
+​ 1836 146 234
+​ 1837 145 236
+​ 1838 143 237
+​ 1839 143 236
+​ 1840 142 236
+​ 1841 142 236
+​ 1842 143 234
+​ 1843 142 232
+​ 1844 143 232
+​ 1845 141 232
+​ 1846 141 231
+​ 1847 142 232
+​ 1848 143 233
+​ 1849 142 233
+​ 1850 142 234
+​ 1851 141 237
+​ 1852 142 236
+​ 1853 143 236
+​ 1854 143 239
+​ 1855 143 238
+​ 1856 143 239
+​ 1857 143 238
+​ 1858 142 240
+​ 1859 142 239
+​ 1860 141 240
+​ 1861 141 238
+​ 1862 141 238
+​ 1863 143 239
+​ 1864 143 240
+​ 1865 144 241
+​ 1866 144 241
+​ 1867 143 245
+​ 1868 143 243
+​ 1869 140 247
+​ 1870 142 245
+​ 1871 142 244
+​ 1872 142 246
+​ 1873 140 246
+​ 1874 143 243
+​ 1875 143 244
+​ 1876 143 244
+​ 1877 145 238
+​ 1878 146 235
+​ 1879 147 233
+​ 1880 146 233
+​ 1881 149 231
+​ 1882 150 234
+​ 1883 150 233
+​ 1884 151 234
+​ 1885 150 236
+​ 1886 151 236
+​ 1887 152 234
+​ 1888 152 235
+​ 1889 151 238
+​ 1890 153 233
+​ 1891 154 231
+​ 1892 154 232
+​ 1893 154 231
+​ 1894 154 232
+​ 1895 153 234
+​ 1896 152 238
+​ 1897 153 238
+​ 1898 153 238
+​ 1899 154 239
+​ 1900 154 241
+​ 1901 152 242
+​ 1902 153 241
+​ 1903 154 242
+​ 1904 155 242
+​ 1905 156 241
+​ 1906 155 241
+​ 1907 153 241
+​ 1908 152 245
+​ 1909 153 248
+​ 1910 153 249
+​ 1911 154 247
+​ 1912 153 248
+​ 1913 153 246
+​ 1914 151 245
+​ 1915 152 244
+​ 1916 152 247
+​ 1917 152 249
+​ 1918 152 248
+​ 1919 156 242
+​ 1920 156 244
+​ 1921 158 244
+​ 1922 158 243
+​ 1923 159 245
+​ 1924 159 245
+​ 1925 160 248
+​ 1926 161 245
+​ 1927 161 244
+​ 1928 162 242
+​ 1929 162 239
+​ 1930 163 237
+​ 1931 162 240
+​ 1932 163 239
+​ 1933 164 239
+​ 1934 166 236
+​ 1935 165 236
+​ 1936 164 234
+​ 1937 164 234
+​ 1938 165 234
+​ 1939 165 237
+​ 1940 165 236
+​ 1941 164 235
+​ 1942 165 235
+​ 1943 163 233
+​ 1944 165 229
+​ 1945 164 228
+​ 1946 163 231
+​ 1947 161 232
+​ 1948 163 234
+​ 1949 162 235
+​ 1950 162 233
+​ 1951 160 231
+​ 1952 162 227
+​ 1953 161 229
+​ 1954 161 230
+​ 1955 160 229
+​ 1956 163 229
+​ 1957 164 229
+​ 1958 164 226
+​ 1959 165 226
+​ 1960 165 227
+​ 1961 167 223
+​ 1962 167 225
+​ 1963 168 224
+​ 1964 169 223
+​ 1965 167 221
+​ 1966 168 220
+​ 1967 165 223
+​ 1968 165 223
+​ 1969 165 221
+​ 1970 166 218
+​ 1971 166 217
+​ 1972 167 213
+​ 1973 169 210
+​ 1974 169 207
+​ 1975 171 207
+​ 1976 170 205
+​ 1977 171 205
+​ 1978 171 204
+​ 1979 171 202
+​ 1980 171 204
+​ 1981 175 204
+​ 1982 176 211
+​ 1983 177 217
+​ 1984 178 218
+​ 1985 178 222
+​ 1986 178 220
+​ 1987 178 222
+​ 1988 179 228
+​ 1989 180 228
+​ 1990 179 230
+​ 1991 180 228
+​ 1992 180 227
+​ 1993 179 231
+​ 1994 179 229
+​ 1995 178 231
+​ 1996 180 228
+​ 1997 180 224
+​ 1998 179 225
+​ 1999 180 227
+​ 2000 179 226
+​ 2001 181 229
+​ 2002 181 232
+​ 2003 181 233
+​ 2004 181 234
+​ 2005 181 231
+​ 2006 182 236
+​ 2007 182 239
+​ 2008 185 232
+​ 2009 183 235
+​ 2010 183 238
+​ 2011 183 237
+​ 2012 184 236
+​ 2013 183 235
+​ 2014 182 235
+​ 2015 183 234
+​ 2016 183 232
+​ 2017 183 231
+​ 2018 180 228
+​ 2019 182 227
+​ 2020 182 226
+​ 2021 181 226
+​ 2022 182 224
+​ 2023 178 225
+​ 2024 176 231
+​ 2025 177 229
+​ 2026 178 228
+​ 2027 178 236
+​ 2028 179 235
+​ 2029 179 239
+​ 2030 179 241
+​ 2031 178 243
+​ 2032 179 244
+​ 2033 180 244
+​ 2034 182 242
+​ 2035 182 245
+​ 2036 182 244
+​ 2037 183 244
+​ 2038 184 245
+​ 2039 183 245
+​ 2040 186 246
+​ 2041 186 245
+​ 2042 188 245
+​ 2043 188 243
+​ 2044 191 239
+​ 2045 190 239
+​ 2046 191 239
+​ 2047 192 237
+​ 2048 192 237
+​ 2049 190 237
+​ 2050 190 237
+​ 2051 189 234
+​ 2052 189 235
+​ 2053 188 233
+​ 2054 186 233
+​ 2055 187 230
+​ 2056 186 227
+​ 2057 187 226
+​ 2058 187 225
+​ 2059 188 229
+​ 2060 188 227
+​ 2061 189 226
+​ 2062 189 223
+​ 2063 188 225
+​ 2064 188 223
+​ 2065 189 223
+​ 2066 189 225
+​ 2067 190 229
+​ 2068 191 230
+​ 2069 190 232
+​ 2070 188 235
+​ 2071 188 236
+​ 2072 188 237
+​ 2073 189 238
+​ 2074 191 241
+​ 2075 191 242
+​ 2076 190 241
+​ 2077 190 243
+​ 2078 190 250
+​ 2079 190 250
+​ 2080 189 250
+build.js:110 2081 189 246
+build.js:110 2082 186 249
+build.js:110 2083 188 250
+build.js:110 2084 189 249
+build.js:110 2085 190 251
+build.js:110 2086 190 251
+build.js:110 2087 191 250
+build.js:110 2088 191 253
+build.js:110 2089 193 253
+build.js:110 2090 196 257
+build.js:110 2091 196 256
+build.js:110 2092 196 255
+build.js:110 2093 195 254
+build.js:110 2094 195 254
+build.js:110 2095 193 259
+build.js:110 2096 195 259
+build.js:110 2097 196 261
+build.js:110 2098 200 259
+build.js:110 2099 202 260
+build.js:110 2100 203 254
+build.js:110 2101 205 253
+build.js:110 2102 204 251
+build.js:110 2103 205 249
+build.js:110 2104 207 248
+build.js:110 2105 208 248
+build.js:110 2106 210 248
+build.js:110 2107 210 250
+build.js:110 2108 208 248
+build.js:110 2109 209 243
+build.js:110 2110 206 245
+build.js:110 2111 206 250
+build.js:110 2112 206 256
+build.js:110 2113 206 254
+build.js:110 2114 208 252
+build.js:110 2115 206 256
+build.js:110 2116 208 260
+build.js:110 2117 207 260
+build.js:110 2118 207 257
+build.js:110 2119 207 257
+build.js:110 2120 207 257
+build.js:110 2121 207 254
+build.js:110 2122 208 254
+build.js:110 2123 208 251
+build.js:110 2124 210 248
+build.js:110 2125 210 251
+build.js:110 2126 211 250
+build.js:110 2127 212 250
+build.js:110 2128 211 250
+build.js:110 2129 212 249
+build.js:110 2130 213 247
+build.js:110 2131 211 247
+build.js:110 2132 210 249
+build.js:110 2133 208 252
+build.js:110 2134 209 254
+build.js:110 2135 207 251
+build.js:110 2136 209 246
+build.js:110 2137 207 250
+build.js:110 2138 207 252
+build.js:110 2139 209 249
+build.js:110 2140 210 253
+build.js:110 2141 211 250
+build.js:110 2142 209 249
+build.js:110 2143 209 249
+build.js:110 2144 209 248
+build.js:110 2145 213 243
+build.js:110 2146 214 241
+build.js:110 2147 216 243
+build.js:110 2148 215 248
+build.js:110 2149 216 246
+build.js:110 2150 215 249
+build.js:110 2151 216 253
+build.js:110 2152 215 254
+build.js:110 2153 217 254
+build.js:110 2154 216 256
+build.js:110 2155 217 257
+build.js:110 2156 217 257
+build.js:110 2157 216 254
+build.js:110 2158 217 251
+build.js:110 2159 217 250
+build.js:110 2160 218 249
+build.js:110 2161 218 256
+build.js:110 2162 217 257
+build.js:110 2163 219 252
+build.js:110 2164 222 246
+build.js:110 2165 224 247
+build.js:110 2166 223 253
+build.js:110 2167 223 254
+build.js:110 2168 223 262
+build.js:110 2169 222 263
+build.js:110 2170 223 261
+build.js:110 2171 222 263
+build.js:110 2172 225 262
+build.js:110 2173 226 266
+build.js:110 2174 229 267
+build.js:110 2175 229 272
+build.js:110 2176 229 275
+build.js:110 2177 230 277
+build.js:110 2178 230 278
+build.js:110 2179 228 275
+build.js:110 2180 228 277
+build.js:110 2181 226 279
+build.js:110 2182 226 282
+build.js:110 2183 228 284
+build.js:110 2184 230 281
+build.js:110 2185 233 281
+build.js:110 2186 233 283
+build.js:110 2187 232 283
+build.js:110 2188 231 286
+build.js:110 2189 232 282
+build.js:110 2190 232 281
+build.js:110 2191 235 281
+build.js:110 2192 238 276
+build.js:110 2193 242 272
+build.js:110 2194 240 275
+build.js:110 2195 241 275
+build.js:110 2196 241 279
+build.js:110 2197 242 279
+build.js:110 2198 241 277
+build.js:110 2199 244 277
+build.js:110 2200 247 272
+build.js:110 2201 246 268
+build.js:110 2202 247 265
+build.js:110 2203 247 261
+build.js:110 2204 248 261
+build.js:110 2205 248 260
+build.js:110 2206 249 259
+build.js:110 2207 250 257
+build.js:110 2208 249 256
+build.js:110 2209 249 254
+build.js:110 2210 250 253
+build.js:110 2211 250 251
+build.js:110 2212 250 250
+build.js:110 2213 250 249
+build.js:110 2214 250 254
+build.js:110 2215 250 259
+build.js:110 2216 252 258
+build.js:110 2217 251 259
+build.js:110 2218 248 256
+build.js:110 2219 246 258
+build.js:110 2220 244 258
+build.js:110 2221 242 263
+build.js:110 2222 243 258
+build.js:110 2223 243 256
+build.js:110 2224 240 257
+build.js:110 2225 242 250
+build.js:110 2226 241 249
+build.js:110 2227 243 249
+build.js:110 2228 247 248
+build.js:110 2229 246 243
+build.js:110 2230 248 244
+build.js:110 2231 247 244
+build.js:110 2232 246 253
+build.js:110 2233 247 257
+build.js:110 2234 247 255
+build.js:110 2235 248 250
+build.js:110 2236 249 252
+build.js:110 2237 251 251
+build.js:110 2238 250 249
+build.js:110 2239 249 255
+build.js:110 2240 250 258
+build.js:110 2241 249 261
+build.js:110 2242 252 255
+build.js:110 2243 252 253
+build.js:110 2244 253 259
+build.js:110 2245 253 264
+build.js:110 2246 254 261
+build.js:110 2247 258 260
+build.js:110 2248 258 258
+build.js:110 2249 258 255
+build.js:110 2250 256 250
+build.js:110 2251 258 251
+build.js:110 2252 258 260
+build.js:110 2253 260 254
+build.js:110 2254 258 256
+build.js:110 2255 258 254
+build.js:110 2256 260 259
+build.js:110 2257 261 266
+build.js:110 2258 262 273
+build.js:110 2259 262 277
+build.js:110 2260 263 273
+build.js:110 2261 265 274
+build.js:110 2262 269 268
+build.js:110 2263 269 268
+build.js:110 2264 269 266
+build.js:110 2265 270 264
+build.js:110 2266 274 263
+build.js:110 2267 272 269
+build.js:110 2268 272 274
+build.js:110 2269 273 279
+build.js:110 2270 277 281
+build.js:110 2271 277 281
+build.js:110 2272 283 275
+build.js:110 2273 284 275
+build.js:110 2274 286 273
+build.js:110 2275 288 271
+build.js:110 2276 288 272
+build.js:110 2277 289 272
+build.js:110 2278 291 265
+build.js:110 2279 291 267
+build.js:110 2280 291 268
+build.js:110 2281 290 271
+build.js:110 2282 290 268
+build.js:110 2283 291 271
+build.js:110 2284 291 272
+build.js:110 2285 289 270
+build.js:110 2286 290 268
+build.js:110 2287 287 270
+build.js:110 2288 290 272
+build.js:110 2289 290 271
+build.js:110 2290 291 269
+build.js:110 2291 292 266
+build.js:110 2292 291 271
+build.js:110 2293 291 280
+build.js:110 2294 295 275
+build.js:110 2295 296 273
+build.js:110 2296 294 273
+build.js:110 2297 295 274
+build.js:110 2298 297 269
+build.js:110 2299 295 274
+build.js:110 2300 297 275
+build.js:110 2301 296 277
+build.js:110 2302 298 277
+build.js:110 2303 300 270
+build.js:110 2304 301 268
+build.js:110 2305 303 263
+build.js:110 2306 305 263
+build.js:110 2307 307 261
+build.js:110 2308 309 260
+build.js:110 2309 309 263
+build.js:110 2310 309 267
+build.js:110 2311 312 264
+build.js:110 2312 316 261
+build.js:110 2313 314 260
+build.js:110 2314 314 258
+build.js:110 2315 314 259
+build.js:110 2316 311 258
+build.js:110 2317 312 255
+build.js:110 2318 314 255
+build.js:110 2319 315 257
+build.js:110 2320 315 255
+build.js:110 2321 315 256
+build.js:110 2322 317 255
+build.js:110 2323 318 256
+build.js:110 2324 319 254
+build.js:110 2325 318 246
+build.js:110 2326 323 245
+build.js:110 2327 327 247
+build.js:110 2328 326 248
+build.js:110 2329 331 242
+build.js:110 2330 331 238
+build.js:110 2331 333 232
+build.js:110 2332 331 232
+build.js:110 2333 330 229
+build.js:110 2334 330 225
+build.js:110 2335 331 225
+build.js:110 2336 331 228
+build.js:110 2337 332 227
+build.js:110 2338 334 227
+build.js:110 2339 333 225
+build.js:110 2340 333 232
+build.js:110 2341 326 234
+build.js:110 2342 326 234
+build.js:110 2343 327 237
+build.js:110 2344 324 238
+build.js:110 2345 324 239
+build.js:110 2346 322 234
+build.js:110 2347 320 232
+build.js:110 2348 321 232
+build.js:110 2349 321 232
+build.js:110 2350 322 227
+build.js:110 2351 320 229
+build.js:110 2352 324 220
+build.js:110 2353 322 219
+build.js:110 2354 323 217
+build.js:110 2355 322 219
+build.js:110 2356 325 221
+build.js:110 2357 322 227
+build.js:110 2358 320 227
+build.js:110 2359 319 230
+build.js:110 2360 323 227
+build.js:110 2361 324 225
+build.js:110 2362 327 224
+build.js:110 2363 327 222
+build.js:110 2364 329 222
+build.js:110 2365 330 229
+build.js:110 2366 329 238
+build.js:110 2367 326 237
+build.js:110 2368 327 238
+build.js:110 2369 330 233
+build.js:110 2370 328 242
+build.js:110 2371 330 241
+build.js:110 2372 332 240
+build.js:110 2373 335 243
+build.js:110 2374 335 244
+build.js:110 2375 337 243
+build.js:110 2376 335 250
+build.js:110 2377 334 251
+build.js:110 2378 334 255
+build.js:110 2379 333 256
+build.js:110 2380 332 259
+build.js:110 2381 334 257
+build.js:110 2382 332 266
+build.js:110 2383 328 269
+build.js:110 2384 328 270
+build.js:110 2385 329 281
+build.js:110 2386 329 281
+build.js:110 2387 329 282
+build.js:110 2388 328 287
+build.js:110 2389 334 283
+build.js:110 2390 337 282
+build.js:110 2391 337 277
+build.js:110 2392 339 269
+build.js:110 2393 341 269
+build.js:110 2394 343 271
+build.js:110 2395 342 270
+build.js:110 2396 340 280
+build.js:110 2397 339 283
+build.js:110 2398 343 284
+build.js:110 2399 340 281
+build.js:110 2400 342 277
+build.js:110 2401 341 275
+build.js:110 2402 342 276
+build.js:110 2403 341 281
+build.js:110 2404 342 285
+build.js:110 2405 341 292
+build.js:110 2406 343 290
+build.js:110 2407 348 288
+build.js:110 2408 347 293
+build.js:110 2409 351 291
+build.js:110 2410 348 294
+build.js:110 2411 347 299
+build.js:110 2412 350 313
+build.js:110 2413 353 310
+build.js:110 2414 354 316
+build.js:110 2415 354 316
+build.js:110 2416 356 323
+build.js:110 2417 357 324
+build.js:110 2418 359 319
+build.js:110 2419 362 319
+build.js:110 2420 361 319
+build.js:110 2421 364 318
+build.js:110 2422 364 317
+build.js:110 2423 364 315
+build.js:110 2424 369 311
+build.js:110 2425 371 313
+build.js:110 2426 377 306
+build.js:110 2427 376 310
+build.js:110 2428 377 307
+build.js:110 2429 375 309
+build.js:110 2430 378 302
+build.js:110 2431 381 295
+build.js:110 2432 383 294
+build.js:110 2433 384 290
+build.js:110 2434 384 287
+build.js:110 2435 385 283
+build.js:110 2436 387 280
+build.js:110 2437 388 276
+build.js:110 2438 387 279
+build.js:110 2439 390 273
+build.js:110 2440 391 276
+build.js:110 2441 392 276
+build.js:110 2442 394 273
+build.js:110 2443 394 269
+build.js:110 2444 397 260
+build.js:110 2445 402 253
+build.js:110 2446 401 253
+build.js:110 2447 405 250
+build.js:110 2448 411 253
+build.js:110 2449 407 253
+build.js:110 2450 401 250
+build.js:110 2451 401 255
+build.js:110 2452 401 255
+build.js:110 2453 401 257
+build.js:110 2454 403 257
+build.js:110 2455 406 247
+build.js:110 2456 408 247
+build.js:110 2457 407 251
+build.js:110 2458 408 241
+build.js:110 2459 410 240
+build.js:110 2460 410 244
+build.js:110 2461 410 242
+build.js:110 2462 410 239
+build.js:110 2463 411 235
+build.js:110 2464 411 230
+build.js:110 2465 409 232
+build.js:110 2466 411 232
+build.js:110 2467 411 242
+build.js:110 2468 409 247
+build.js:110 2469 411 249
+build.js:110 2470 413 255
+build.js:110 2471 415 255
+build.js:110 2472 415 256
+build.js:110 2473 419 248
+build.js:110 2474 417 244
+build.js:110 2475 417 244
+build.js:110 2476 420 238
+build.js:110 2477 423 236
+build.js:110 2478 423 240
+build.js:110 2479 424 239
+build.js:110 2480 423 239
+build.js:110 2481 422 235
+build.js:110 2482 419 240
+build.js:110 2483 422 240
+build.js:110 2484 423 236
+build.js:110 2485 420 238
+build.js:110 2486 420 241
+build.js:110 2487 418 243
+build.js:110 2488 423 239
+build.js:110 2489 426 242
+build.js:110 2490 429 233
+build.js:110 2491 427 237
+build.js:110 2492 429 227
+build.js:110 2493 428 232
+build.js:110 2494 427 231
+build.js:110 2495 431 224
+build.js:110 2496 433 223
+build.js:110 2497 434 216
+build.js:110 2498 432 217
+build.js:110 2499 433 210
+build.js:110 2500 435 207
+build.js:110 2501 437 216
+build.js:110 2502 440 219
+build.js:110 2503 439 219
+build.js:110 2504 439 217
+build.js:110 2505 438 221
+build.js:110 2506 435 218
+build.js:110 2507 433 222
+build.js:110 2508 436 223
+build.js:110 2509 433 227
+build.js:110 2510 438 226
+build.js:110 2511 440 238
+build.js:110 2512 438 244
+build.js:110 2513 441 246
+build.js:110 2514 442 241
+build.js:110 2515 448 239
+build.js:110 2516 448 255
+build.js:110 2517 451 254
+build.js:110 2518 452 250
+build.js:110 2519 452 246
+build.js:110 2520 454 257
+build.js:110 2521 458 260
+build.js:110 2522 459 261
+build.js:110 2523 455 258
+build.js:110 2524 455 253
+build.js:110 2525 454 262
+build.js:110 2526 458 258
+build.js:110 2527 461 261
+build.js:110 2528 461 259
+build.js:110 2529 463 261
+build.js:110 2530 466 257
+build.js:110 2531 463 261
+build.js:110 2532 464 259
+build.js:110 2533 464 255
+build.js:110 2534 469 249
+build.js:110 2535 468 247
+build.js:110 2536 466 241
+build.js:110 2537 470 238
+build.js:110 2538 472 238
+build.js:110 2539 470 233
+build.js:110 2540 472 238
+build.js:110 2541 475 237
+build.js:110 2542 477 231
+build.js:110 2543 476 226
+build.js:110 2544 475 226
+build.js:110 2545 474 227
+build.js:110 2546 472 227
+build.js:110 2547 476 224
+build.js:110 2548 478 218
+build.js:110 2549 484 211
+build.js:110 2550 487 204
+build.js:110 2551 487 196
+build.js:110 2552 489 193
+build.js:110 2553 490 193
+build.js:110 2554 487 193
+build.js:110 2555 488 192
+build.js:110 2556 488 191
+build.js:110 2557 492 184
+build.js:110 2558 492 174
+build.js:110 2559 491 172
+build.js:110 2560 494 169
+build.js:110 2561 498 159
+build.js:110 2562 498 160
+build.js:110 2563 499 156
+build.js:110 2564 496 150
+build.js:110 2565 496 151
+build.js:110 2566 495 144
+build.js:110 2567 492 144
+build.js:110 2568 494 147
+build.js:110 2569 496 156
+build.js:110 2570 496 155
+build.js:110 2571 496 153
+build.js:110 2572 497 156
+build.js:110 2573 495 164
+build.js:110 2574 496 164
+build.js:110 2575 496 161
+build.js:110 2576 491 163
+build.js:110 2577 497 160
+build.js:110 2578 497 162
+build.js:110 2579 494 172
+build.js:110 2580 495 181
+build.js:110 2581 494 183
+build.js:110 2582 495 183
+build.js:110 2583 499 197
+build.js:110 2584 500 204
+build.js:110 2585 501 208
+build.js:110 2586 501 211
+build.js:110 2587 498 212
+build.js:110 2588 495 216
+build.js:110 2589 495 209
+build.js:110 2590 495 203
+build.js:110 2591 496 202
+build.js:110 2592 498 204
+build.js:110 2593 500 198
+build.js:110 2594 497 209
+build.js:110 2595 495 219
+build.js:110 2596 496 218
+build.js:110 2597 497 221
+build.js:110 2598 502 226
+build.js:110 2599 502 235
+build.js:110 2600 500 237
+build.js:110 2601 497 235
+build.js:110 2602 500 228
+build.js:110 2603 504 226
+build.js:110 2604 504 219
+build.js:110 2605 505 218
+build.js:110 2606 504 211
+build.js:110 2607 507 211
+build.js:110 2608 509 209
+build.js:110 2609 511 204
+build.js:110 2610 515 204
+build.js:110 2611 515 199
+build.js:110 2612 513 205
+build.js:110 2613 516 196
+build.js:110 2614 516 195
+build.js:110 2615 517 187
+build.js:110 2616 516 182
+build.js:110 2617 518 179
+build.js:110 2618 518 178
+build.js:110 2619 518 175
+build.js:110 2620 519 173
+build.js:110 2621 519 171
+build.js:110 2622 518 175
+build.js:110 2623 519 173
+build.js:110 2624 515 179
+build.js:110 2625 514 177
+build.js:110 2626 518 166
+build.js:110 2627 519 171
+build.js:110 2628 522 174
+build.js:110 2629 519 174
+build.js:110 2630 520 181
+build.js:110 2631 521 178
+build.js:110 2632 520 175
+build.js:110 2633 522 182
+build.js:110 2634 523 177
+build.js:110 2635 518 188
+build.js:110 2636 514 197
+build.js:110 2637 510 197
+build.js:110 2638 509 203
+build.js:110 2639 510 200
+build.js:110 2640 511 209
+build.js:110 2641 510 210
+build.js:110 2642 509 228
+build.js:110 2643 511 233
+build.js:110 2644 514 234
+build.js:110 2645 513 243
+build.js:110 2646 512 258
+build.js:110 2647 515 256
+build.js:110 2648 516 264
+build.js:110 2649 516 273
+build.js:110 2650 514 279
+build.js:110 2651 517 270
+build.js:110 2652 519 276
+build.js:110 2653 523 271
+build.js:110 2654 526 285
+build.js:110 2655 525 287
+build.js:110 2656 531 285
+build.js:110 2657 532 289
+build.js:110 2658 531 293
+build.js:110 2659 533 296
+build.js:110 2660 538 283
+build.js:110 2661 538 281
+build.js:110 2662 539 289
+build.js:110 2663 545 292
+build.js:110 2664 550 291
+build.js:110 2665 556 276
+build.js:110 2666 557 273
+build.js:110 2667 557 267
+build.js:110 2668 568 261
+build.js:110 2669 569 265
+build.js:110 2670 579 254
+build.js:110 2671 580 256
+build.js:110 2672 580 252
+build.js:110 2673 580 251
+build.js:110 2674 583 245
+build.js:110 2675 589 250
+build.js:110 2676 589 258
+build.js:110 2677 596 245
+build.js:110 2678 593 244
+build.js:110 2679 595 238
+build.js:110 2680 598 236
+build.js:110 2681 599 233
+build.js:110 2682 600 237
+build.js:110 2683 593 240
+build.js:110 2684 592 243
+build.js:110 2685 595 234
+build.js:110 2686 597 229
+build.js:110 2687 598 232
+build.js:110 2688 600 241
+build.js:110 2689 607 233
+build.js:110 2690 610 233
+build.js:110 2691 616 235
+build.js:110 2692 619 225
+build.js:110 2693 623 225
+build.js:110 2694 627 237
+build.js:110 2695 621 248
+build.js:110 2696 624 246
+build.js:110 2697 629 249
+build.js:110 2698 630 238
+build.js:110 2699 634 237
+build.js:110 2700 638 234
+build.js:110 2701 633 236
+build.js:110 2702 634 242
+build.js:110 2703 639 243
+build.js:110 2704 639 239
+build.js:110 2705 642 244
+build.js:110 2706 643 241
+build.js:110 2707 643 244
+build.js:110 2708 648 253
+build.js:110 2709 644 261
+build.js:110 2710 644 254
+build.js:110 2711 644 247
+build.js:110 2712 649 243
+build.js:110 2713 651 237
+build.js:110 2714 653 227
+build.js:110 2715 650 216
+build.js:110 2716 647 208
+build.js:110 2717 650 208
+build.js:110 2718 648 210
+build.js:110 2719 649 203
+build.js:110 2720 650 192
+build.js:110 2721 649 186
+build.js:110 2722 650 189
+build.js:110 2723 653 186
+build.js:110 2724 655 188
+build.js:110 2725 657 194
+build.js:110 2726 659 188
+build.js:110 2727 660 200
+build.js:110 2728 661 203
+build.js:110 2729 661 204
+build.js:110 2730 661 206
+build.js:110 2731 662 207
+build.js:110 2732 658 216
+build.js:110 2733 663 221
+build.js:110 2734 668 220
+build.js:110 2735 671 214
+build.js:110 2736 671 216
+build.js:110 2737 673 215
+build.js:110 2738 675 212
+build.js:110 2739 676 217
+build.js:110 2740 674 216
+build.js:110 2741 675 197
+build.js:110 2742 677 195
+build.js:110 2743 678 193
+build.js:110 2744 679 182
+build.js:110 2745 682 177
+build.js:110 2746 682 173
+build.js:110 2747 684 170
+build.js:110 2748 688 168
+build.js:110 2749 686 170
+build.js:110 2750 686 178
+build.js:110 2751 687 177
+build.js:110 2752 686 186
+build.js:110 2753 691 193
+build.js:110 2754 691 209
+build.js:110 2755 699 224
+build.js:110 2756 694 224
+build.js:110 2757 696 227
+build.js:110 2758 698 225
+build.js:110 2759 695 229
+build.js:110 2760 693 236
+build.js:110 2761 695 258
+build.js:110 2762 696 274
+build.js:110 2763 701 277
+build.js:110 2764 706 282
+build.js:110 2765 712 288
+build.js:110 2766 717 293
+build.js:110 2767 718 292
+build.js:110 2768 726 288
+build.js:110 2769 733 289
+build.js:110 2770 737 297
+build.js:110 2771 734 293
+build.js:110 2772 738 299
+build.js:110 2773 744 288
+build.js:110 2774 739 273
+build.js:110 2775 740 280
+build.js:110 2776 744 294
+build.js:110 2777 747 288
+build.js:110 2778 749 286
+build.js:110 2779 747 298
+build.js:110 2780 751 293
+build.js:110 2781 757 288
+build.js:110 2782 769 292
+build.js:110 2783 772 278
+build.js:110 2784 772 274
+build.js:110 2785 778 270
+build.js:110 2786 784 261
+build.js:110 2787 789 252
+build.js:110 2788 793 256
+build.js:110 2789 800 249
+build.js:110 2790 802 248
+build.js:110 2791 805 243
+build.js:110 2792 803 260
+build.js:110 2793 805 260
+build.js:110 2794 807 260
+build.js:110 2795 804 263
+build.js:110 2796 814 248
+build.js:110 2797 814 252
+build.js:110 2798 820 231
+build.js:110 2799 826 219
+build.js:110 2800 825 212
+build.js:110 2801 823 219
+build.js:110 2802 817 221
+build.js:110 2803 821 208
+build.js:110 2804 820 200
+build.js:110 2805 818 184
+build.js:110 2806 825 180
+build.js:110 2807 827 179
+build.js:110 2808 828 162
+build.js:110 2809 822 152
+build.js:110 2810 822 144
+build.js:110 2811 821 152
+build.js:110 2812 827 147
+build.js:110 2813 830 156
+build.js:110 2814 833 152
+build.js:110 2815 830 146
+build.js:110 2816 830 160
+build.js:110 2817 830 172
+build.js:110 2818 837 166
+build.js:110 2819 833 165
+build.js:110 2820 834 181
+build.js:110 2821 838 209
+build.js:110 2822 835 218
+build.js:110 2823 832 213
+build.js:110 2824 834 212
+build.js:110 2825 830 206
+build.js:110 2826 838 204
+build.js:110 2827 843 187
+build.js:110 2828 842 184
+build.js:110 2829 848 171
+build.js:110 2830 849 176
+build.js:110 2831 853 187
+build.js:110 2832 855 181
+build.js:110 2833 859 189
+build.js:110 2834 862 184
+build.js:110 2835 861 186
+build.js:110 2836 869 223
+build.js:110 2837 874 224
+build.js:110 2838 875 220
+build.js:110 2839 873 231
+build.js:110 2840 879 227
+build.js:110 2841 885 220
+build.js:110 2842 893 209
+build.js:110 2843 892 217
+build.js:110 2844 889 214
+build.js:110 2845 884 214
+build.js:110 2846 891 202
+build.js:110 2847 890 200
+build.js:110 2848 894 189
+build.js:110 2849 901 169
+build.js:110 2850 901 175
+build.js:110 2851 897 183
+build.js:110 2852 899 183
+build.js:110 2853 896 184
+build.js:110 2854 892 187
+build.js:110 2855 896 169
+build.js:110 2856 893 166
+build.js:110 2857 897 155
+build.js:110 2858 893 157
+build.js:110 2859 890 171
+build.js:110 2860 889 165
+build.js:110 2861 890 168
+build.js:110 2862 888 148
+build.js:110 2863 886 146
+build.js:110 2864 888 152
+build.js:110 2865 886 179
+build.js:110 2866 881 176
+build.js:110 2867 878 190
+build.js:110 2868 875 200
+build.js:110 2869 878 210
+build.js:110 2870 881 226
+build.js:110 2871 883 254
+build.js:110 2872 890 251
+build.js:110 2873 894 246
+build.js:110 2874 896 236
+build.js:110 2875 899 236
+build.js:110 2876 894 231
+build.js:110 2877 900 219
+build.js:110 2878 904 206
+build.js:110 2879 904 218
+build.js:110 2880 902 263
+build.js:110 2881 910 281
+build.js:110 2882 911 303
+build.js:110 2883 916 325
+build.js:110 2884 930 330
+build.js:110 2885 941 335
+build.js:110 2886 956 325
+build.js:110 2887 957 309
+build.js:110 2888 965 288
+build.js:110 2889 971 284
+build.js:110 2890 975 272
+build.js:110 2891 980 258
+build.js:110 2892 979 249
+build.js:110 2893 972 247
+build.js:110 2894 976 239
+build.js:110 2895 980 232
+build.js:110 2896 979 219
+build.js:110 2897 979 224
+build.js:110 2898 984 207
+build.js:110 2899 988 193
+build.js:110 2900 990 188
+build.js:110 2901 992 178
+build.js:110 2902 995 160
+build.js:110 2903 1003 162
+build.js:110 2904 1000 159
+build.js:110 2905 993 156
+build.js:110 2906 996 169
+build.js:110 2907 997 186
+build.js:110 2908 999 174
+build.js:110 2909 996 169
+build.js:110 2910 995 156
+build.js:110 2911 989 144
+build.js:110 2912 985 148
+build.js:110 2913 984 162
+build.js:110 2914 987 160
+build.js:110 2915 994 147
+build.js:110 2916 994 152
+build.js:110 2917 992 149
+build.js:110 2918 992 173
+build.js:110 2919 994 186
+build.js:110 2920 994 220
+build.js:110 2921 995 238
+build.js:110 2922 996 240
+build.js:110 2923 997 239
+build.js:110 2924 994 241
+build.js:110 2925 991 254
+build.js:110 2926 998 271
+build.js:110 2927 998 281
+build.js:110 2928 999 289
+build.js:110 2929 1004 310
+build.js:110 2930 1011 300
+build.js:110 2931 1013 310
+build.js:110 2932 1013 306
+build.js:110 2933 1019 282
+build.js:110 2934 1019 296
+build.js:110 2935 1033 310
+build.js:110 2936 1037 299
+build.js:110 2937 1047 304
+build.js:110 2938 1060 303
+build.js:110 2939 1060 303
+build.js:110 2940 1065 286
+build.js:110 2941 1071 301
+build.js:110 2942 1080 310
+build.js:110 2943 1091 295
+build.js:110 2944 1094 288
+build.js:110 2945 1105 267
+build.js:110 2946 1116 245
+build.js:110 2947 1118 252
+build.js:110 2948 1111 265
+build.js:110 2949 1112 248
+build.js:110 2950 1118 221
+build.js:110 2951 1122 222
+build.js:110 2952 1127 234
+build.js:110 2953 1123 247
+build.js:110 2954 1125 271
+build.js:110 2955 1137 257
+build.js:110 2956 1140 249
+build.js:110 2957 1149 232
+build.js:110 2958 1153 223
+build.js:110 2959 1157 250
+build.js:110 2960 1159 248
+build.js:110 2961 1170 237
+build.js:110 2962 1177 232
+build.js:110 2963 1175 217
+build.js:110 2964 1181 226
+build.js:110 2965 1182 269
+build.js:110 2966 1189 275
+build.js:110 2967 1197 294
+build.js:110 2968 1203 330
+build.js:110 2969 1216 289
+build.js:110 2970 1231 274
+build.js:110 2971 1236 291
+build.js:110 2972 1244 269
+build.js:110 2973 1250 241
+build.js:110 2974 1246 227
+build.js:110 2975 1246 216
+build.js:110 2976 1251 215
+build.js:110 2977 1259 223
+build.js:110 2978 1266 221
+build.js:110 2979 1274 242
+build.js:110 2980 1271 224
+build.js:110 2981 1285 234
+build.js:110 2982 1294 232
+build.js:110 2983 1298 241
+build.js:110 2984 1301 233
+build.js:110 2985 1299 242
+build.js:110 2986 1299 259
+build.js:110 2987 1307 259
+build.js:110 2988 1306 253
+build.js:110 2989 1310 282
+build.js:110 2990 1317 261
+build.js:110 2991 1325 264
+build.js:110 2992 1327 275
+build.js:110 2993 1334 271
+build.js:110 2994 1340 279
+build.js:110 2995 1343 255
+build.js:110 2996 1350 257
+build.js:110 2997 1365 239
+build.js:110 2998 1369 280
+build.js:110 2999 1367 284
+build.js:110 3000 1375 266
+build.js:110 3001 1376 280
+build.js:110 3002 1375 307
+build.js:110 3003 1381 286
+build.js:110 3004 1391 255
+build.js:110 3005 1386 260
+build.js:110 3006 1392 260
+build.js:110 3007 1397 245
+build.js:110 3008 1407 215
+build.js:110 3009 1412 255
+build.js:110 3010 1428 215
+build.js:110 3011 1430 298
+build.js:110 3012 1437 302
+build.js:110 3013 1448 276
+build.js:110 3014 1457 264
+build.js:110 3015 1472 260
+build.js:110 3016 1487 264
+build.js:110 3017 1485 252
+build.js:110 3018 1481 307
+build.js:110 3019 1496 295
+build.js:110 3020 1504 313
+build.js:110 3021 1514 282
+build.js:110 3022 1522 251
+build.js:110 3023 1527 229
+build.js:110 3024 1524 189
+build.js:110 3025 1522 157
+build.js:110 3026 1513 134
+build.js:110 3027 1498 121
+build.js:110 3028 1492 184
+build.js:110 3029 1489 232
+build.js:110 3030 1481 247
+build.js:110 3031 1480 273
+build.js:110 3032 1475 293
+build.js:110 3033 1471 353
+build.js:110 3034 1483 413
+build.js:110 3035 1490 397
+build.js:110 3036 1513 363
+build.js:110 3037 1533 329
+build.js:110 3038 1546 293
+build.js:110 3039 1550 279
+build.js:110 3040 1555 288
+build.js:110 3041 1561 278
+build.js:110 3042 1571 306
+build.js:110 3043 1587 287
+build.js:110 3044 1599 335
+build.js:110 3045 1604 279
+build.js:110 3046 1610 340
+build.js:110 3047 1618 378
+build.js:110 3048 1636 338
+build.js:110 3049 1639 369
+build.js:110 3050 1653 369
+build.js:110 3051 1666 368
+build.js:110 3052 1680 363
+build.js:110 3053 1688 263
+build.js:110 3054 1676 194
+build.js:110 3055 1669 135
+build.js:110 3056 1658 94
+build.js:110 3057 1649 69
+build.js:110 3058 1639 50
+build.js:110 3059 1623 36
+build.js:110 3060 1618 27
+build.js:110 3061 1605 21
+build.js:110 3062 1593 16
+build.js:110 3063 1577 10
+build.js:110 3064 1560 9
+build.js:110 3065 1541 8
+build.js:110 3066 1522 7
+build.js:110 3067 1513 4
+build.js:110 3068 1497 2
+build.js:110 3069 1482 2
+build.js:110 3070 1463 1
+build.js:110 3071 1442 1
+build.js:110 3072 1429 1
+build.js:110 3073 1414 1
+build.js:110 3074 1404 1
+build.js:110 3075 1391 0
+build.js:113 Uncaught Error: Something went badly wrong!
+    at draw (build.js:113)
+    at p5._main.default.redraw (p5.js:65953)
+    at _draw (p5.js:58869)
+draw @ build.js:113
+_main.default.redraw @ p5.js:65953
+_draw @ p5.js:58869
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
+requestAnimationFrame (async)
+_draw @ p5.js:58892
